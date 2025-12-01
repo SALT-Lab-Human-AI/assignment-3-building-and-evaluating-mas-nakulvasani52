@@ -1,80 +1,55 @@
-# Configuration file for Multi-Agent Research System
-# You can modify these settings for their implementation
+# Configuration file for Multi-Agent Literature Review System
 
 system:
-  name: "Multi-Agent Research Assistant"
-  topic: "HCI Research"  # Change this to your chosen topic
-  max_iterations: 10
-  timeout_seconds: 300
+  name: "Literature Review Assistant"
+  topic: "Literature Review for Research Papers"
+  description: "Helps researchers conduct comprehensive literature reviews"
+  max_iterations: 3
+  max_revisions: 2
+  timeout_seconds: 600
 
 agents:
   planner:
-    role: "Task Planner"
+    role: "Research Planner"
     enabled: true
-    # Custom system prompt (optional - leave empty to use default)
-    # If provided, ensure it includes the handoff signal: "PLAN COMPLETE"
+    description: "Analyzes research topic and creates search strategy"
     system_prompt: ""  # Empty = use default prompt
-    # Example custom prompt:
-    # system_prompt: |
-    #   You are an expert research planner specializing in HCI topics.
-    #   Break down queries into specific, actionable research steps.
-    #   Focus on recent publications (last 5 years) and seminal works.
-    #   After creating the plan, say "PLAN COMPLETE".
-
+    
   researcher:
-    role: "Evidence Gatherer"
+    role: "Paper Researcher"
     enabled: true
-    # Custom system prompt (optional - leave empty to use default)
-    # If provided, ensure it mentions tools and includes: "RESEARCH COMPLETE"
+    description: "Searches for relevant papers and extracts information"
     system_prompt: ""  # Empty = use default prompt
-    max_sources: 10
-    # Example custom prompt:
-    # system_prompt: |
-    #   You are a research specialist in HCI and UX design.
-    #   Use web_search() and paper_search() tools to gather evidence.
-    #   Prioritize peer-reviewed papers and authoritative sources.
-    #   After collecting 8-10 sources, say "RESEARCH COMPLETE".
-
+    max_sources: 15
+    max_papers: 10
+    
+  analyzer:
+    role: "Pattern Analyzer"
+    enabled: true
+    description: "Identifies design patterns, methodologies, and state-of-the-art"
+    system_prompt: ""  # Empty = use default prompt
+    
   writer:
-    role: "Report Synthesizer"
+    role: "Literature Review Writer"
     enabled: true
-    # Custom system prompt (optional - leave empty to use default)
-    # If provided, ensure it includes: "DRAFT COMPLETE"
+    description: "Synthesizes findings into comprehensive review"
     system_prompt: ""  # Empty = use default prompt
-    # Example custom prompt:
-    # system_prompt: |
-    #   You are an academic writer specializing in HCI research.
-    #   Synthesize findings with proper APA citations.
-    #   Write in a clear, engaging style accessible to students.
-    #   After completing the draft, say "DRAFT COMPLETE".
-
-  critic:
-    role: "Quality Verifier"
-    enabled: true
-    # Custom system prompt (optional - leave empty to use default)
-    # If provided, ensure it includes: "APPROVED - RESEARCH COMPLETE" or "NEEDS REVISION"
-    system_prompt: ""  # Empty = use default prompt
-    # Example custom prompt:
-    # system_prompt: |
-    #   You are a peer reviewer for HCI research.
-    #   Evaluate for academic rigor, source quality, and clarity.
-    #   Be thorough but constructive in your feedback.
-    #   Say "APPROVED - RESEARCH COMPLETE" or "NEEDS REVISION".
+    citation_format: "APA"
 
 models:
   # Default model for agents (Groq)
   default:
-    provider: "vllm"
-    name: "openai/gpt-oss-20b"
+    provider: "groq"
+    name: "llama-3.3-70b-versatile"
     temperature: 0.7
-    max_tokens: 2048
+    max_tokens: 4096
 
   # Judge model for evaluation
   judge:
-    provider: "vllm"
-    name: "openai/gpt-oss-20b"
+    provider: "groq"
+    name: "llama-3.3-70b-versatile"
     temperature: 0.3
-    max_tokens: 1024
+    max_tokens: 2048
 
 tools:
   web_search:
@@ -84,7 +59,7 @@ tools:
 
   paper_search:
     enabled: true
-    provider: "semantic_scholar"
+    provider: "serpapi"
     max_results: 10
 
   citation_extraction:
@@ -110,28 +85,39 @@ safety:
 evaluation:
   enabled: true
   num_test_queries: 10
+  output_dir: "outputs/evaluations"
 
-  # Judge criteria
+  # Judge criteria for literature reviews
   criteria:
-    - name: "relevance"
-      weight: 0.25
-      description: "How relevant is the response to the query?"
+    - name: "relevance_coverage"
+      weight: 0.20
+      description: "Coverage of relevant papers and appropriateness of scope"
+      scale: "0-10"
 
     - name: "evidence_quality"
-      weight: 0.25
-      description: "Quality of citations and evidence used"
+      weight: 0.20
+      description: "Quality and authority of sources, proper citations"
+      scale: "0-10"
+
+    - name: "comparative_analysis"
+      weight: 0.20
+      description: "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+      scale: "0-10"
 
     - name: "factual_accuracy"
-      weight: 0.20
-      description: "Factual correctness and consistency"
+      weight: 0.15
+      description: "Correctness of paper details, no hallucinated references"
+      scale: "0-10"
 
     - name: "safety_compliance"
-      weight: 0.15
-      description: "No unsafe or inappropriate content"
+      weight: 0.10
+      description: "No prohibited content, appropriate academic tone"
+      scale: "0-10"
 
-    - name: "clarity"
+    - name: "clarity_organization"
       weight: 0.15
-      description: "Clarity and organization of response"
+      description: "Logical structure, clear writing, smooth transitions"
+      scale: "0-10"
 
 logging:
   level: "INFO"

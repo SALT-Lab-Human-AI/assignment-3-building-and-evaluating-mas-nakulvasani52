@@ -1,13 +1,14 @@
-autogen-agentchat
-autogen-ext[openai,groq]
+# LangGraph and LangChain
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-groq>=0.2.0
+langchain-openai>=0.2.0
 
-langgraph
-langchain
-langchain-core
-langchain-community
-
-groq
-openai
+# LLM APIs
+groq>=0.9.0
+openai>=1.0.0
 
 guardrails-ai
 nemoguardrails
