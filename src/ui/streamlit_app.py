@@ -109,16 +109,62 @@ def display_agent_traces(traces: list):
             "Researcher": "🔍",
             "Analyzer": "🔬",
             "Writer": "✍️",
-            "QualityCheck": "✅"
+            "QualityCheck": "✅",
+            "Judge": "⚖️"
         }
         
         icon = agent_colors.get(agent_name, "🤖")
+        tool_used = trace.get("tool", "")
+        evaluation = trace.get("evaluation", {})
         
-        with st.expander(f"{icon} **{agent_name}** - {action} ({time_str})", expanded=False):
-            if duration:
-                st.caption(f"Duration: {duration:.2f}s")
-            if details:
-                st.text(details)
+        if tool_used == "tavily":
+            with st.expander(f"🌐 **Tavily Web Search** - {action} ({time_str})", expanded=True):
+                st.success("✅ Tavily API was used for this search")
+                if duration:
+                    st.caption(f"⏱️ Duration: {duration:.2f}s")
+                if details:
+                    st.info(details)
+        elif agent_name == "Judge" and evaluation:
+            # Special display for Judge evaluation
+            overall_score = evaluation.get("overall_score", 0)
+            with st.expander(f"⚖️ **LLM Judge** - {action} ({time_str})", expanded=True):
+                st.success(f"📊 Overall Quality Score: **{overall_score:.1f}/10**")
+                
+                # Display criteria scores
+                criteria_scores = evaluation.get("criteria_scores", {})
+                if criteria_scores:
+                    st.markdown("#### Evaluation Breakdown:")
+                    for criterion, data in criteria_scores.items():
+                        score = data.get("score", 0)
+                        weight = data.get("weight", 0)
+                        
+                        # Color code based on score
+                        if score >= 8:
+                            color = "🟢"
+                        elif score >= 6:
+                            color = "🟡"
+                        else:
+                            color = "🔴"
+                        
+                        st.markdown(f"{color} **{criterion}**: {score:.1f}/10 (weight: {weight:.0%})")
+                    
+                    # Show feedback
+                    feedback = evaluation.get("feedback", {})
+                    if feedback:
+                        with st.expander("📝 Detailed Feedback"):
+                            for criterion, fb in feedback.items():
+                                st.markdown(f"**{criterion}:**")
+                                st.text(fb)
+                                st.divider()
+                
+                if duration:
+                    st.caption(f"⏱️ Evaluation time: {duration:.2f}s")
+        else:
+            with st.expander(f"{icon} **{agent_name}** - {action} ({time_str})", expanded=False):
+                if duration:
+                    st.caption(f"⏱️ Duration: {duration:.2f}s")
+                if details:
+                    st.text(details)
 
 
 def display_response(result: Dict[str, Any]):

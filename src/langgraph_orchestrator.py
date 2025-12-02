@@ -89,6 +89,19 @@ class LangGraphOrchestrator:
         safety_config = config.get("safety", {})
         self.safety_manager = SafetyManager(safety_config) if safety_config.get("enabled") else None
         
+        # Initialize LLM judge for evaluation
+        try:
+            from src.evaluation.judge import LLMJudge
+            eval_config = {
+                **config.get("evaluation", {}),
+                "judge_model": config.get("models", {}).get("judge", {})
+            }
+            self.judge = LLMJudge(eval_config)
+            self.logger.info("LLM Judge initialized")
+        except Exception as e:
+            self.logger.warning(f"Could not initialize LLM Judge: {e}")
+            self.judge = None
+        
         # Initialize tools
         tools_config = config.get("tools", {})
         self.tools = self._init_tools(tools_config)
@@ -156,6 +169,7 @@ class LangGraphOrchestrator:
         workflow.add_node("writer", self._writer_node)
         workflow.add_node("quality_check", self._quality_check_node)
         workflow.add_node("safety_check_output", self._safety_check_output_node)
+        workflow.add_node("judge_evaluation", self._judge_evaluation_node)
         
         # Define edges
         workflow.set_entry_point("safety_check_input")
@@ -190,10 +204,13 @@ class LangGraphOrchestrator:
             "safety_check_output",
             self._should_continue_after_output_check,
             {
-                "continue": END,
+                "continue": "judge_evaluation",
                 "stop": END
             }
         )
+        
+        # Judge evaluation goes to END
+        workflow.add_edge("judge_evaluation", END)
         
         return workflow.compile()
     
@@ -269,6 +286,28 @@ class LangGraphOrchestrator:
         # Search for papers (synchronous version for now)
         import asyncio
         papers = asyncio.run(self.agents["researcher"].search_papers(state["search_plan"]))
+        
+        # Also use Tavily for supplementary web search if available
+        tavily_used = False
+        if "web_search" in self.tools:
+            try:
+                web_tool = self.tools["web_search"]
+                topic = state["search_plan"].get("topic", state["query"])
+                web_results = asyncio.run(web_tool.search(f"{topic} research papers"))
+                
+                if web_results:
+                    tavily_used = True
+                    self.logger.info(f"Tavily found {len(web_results)} supplementary sources")
+                    state["agent_messages"].append({
+                        "agent": "Researcher",
+                        "action": f"🌐 Used Tavily Web Search - Found {len(web_results)} supplementary sources",
+                        "details": f"Tavily search for: '{topic}'",
+                        "timestamp": datetime.now().isoformat(),
+                        "tool": "tavily",
+                        "duration_seconds": 0.5
+                    })
+            except Exception as e:
+                self.logger.warning(f"Tavily search failed: {e}")
         
         state["papers"] = papers
         state["agent_messages"].append({
@@ -413,8 +452,58 @@ class LangGraphOrchestrator:
         return state
     
     def _should_continue_after_output_check(self, state: LitReviewState) -> str:
-        """Always continue to END after output check."""
+        """Always continue to judge evaluation after output check."""
         return "continue"
+    
+    def _judge_evaluation_node(self, state: LitReviewState) -> LitReviewState:
+        """Evaluate the output using LLM-as-a-Judge."""
+        self.logger.info("[Judge] Evaluating output quality")
+        
+        if not self.judge:
+            self.logger.warning("Judge not initialized, skipping evaluation")
+            state["agent_messages"].append({
+                "agent": "Judge",
+                "action": "Evaluation skipped (judge not initialized)",
+                "timestamp": datetime.now().isoformat()
+            })
+            return state
+        
+        agent_start = datetime.now()
+        
+        try:
+            # Evaluate the final response
+            evaluation = self.judge.evaluate(
+                query=state["query"],
+                response=state["final_response"],
+                papers=state["papers"],
+                bibliography=state["bibliography"]
+            )
+            
+            # Store evaluation in metadata
+            state["metadata"]["judge_evaluation"] = evaluation
+            
+            # Add to agent messages
+            overall_score = evaluation.get("overall_score", 0)
+            state["agent_messages"].append({
+                "agent": "Judge",
+                "action": f"Evaluated output quality - Score: {overall_score:.1f}/10",
+                "details": f"Criteria evaluated: {', '.join(evaluation.get('criteria_scores', {}).keys())}",
+                "timestamp": datetime.now().isoformat(),
+                "duration_seconds": (datetime.now() - agent_start).total_seconds(),
+                "evaluation": evaluation
+            })
+            
+            self.logger.info(f"Judge evaluation complete: {overall_score:.2f}/10")
+            
+        except Exception as e:
+            self.logger.error(f"Error during judge evaluation: {e}")
+            state["agent_messages"].append({
+                "agent": "Judge",
+                "action": f"Evaluation failed: {str(e)}",
+                "timestamp": datetime.now().isoformat()
+            })
+        
+        return state
     
     # Public interface
     

@@ -3,9 +3,11 @@ Safety Manager
 Coordinates safety guardrails and logs safety events.
 """
 
-from typing import Dict, Any, List, Optional, Tuple
+from typing import List, Dict, Any, Tuple, Optional
 import logging
+import json
 from datetime import datetime
+from pathlib import Path
 import json
 import os
 
@@ -33,8 +35,26 @@ class SafetyManager:
         self.enabled = config.get("enabled", True)
         self.log_events = config.get("log_events", True)
         self.logger = logging.getLogger("safety")
+        
+        # Safety policies (exposed for compliance checking)
+        self.policies = config.get("policies", {
+            "harmful_content": True,
+            "academic_dishonesty": True,
+            "toxic_language": True,
+            "inappropriate_content": True
+        })
+        
+        # Guardrails AI integration
+        self.use_guardrails_ai = config.get("framework") == "guardrails"
+        self.input_guard = None
+        self.output_guard = None
+        
+        # Initialize log file
+        if self.log_events:
+            self.log_file = Path("logs/safety_events.log")
+            self.log_file.parent.mkdir(parents=True, exist_ok=True)
 
-        # Safety event log
+        # Safety event log (deprecated, replaced by log_file)
         self.safety_events: List[Dict[str, Any]] = []
 
         # Prohibited categories
@@ -134,14 +154,19 @@ class SafetyManager:
                 })
 
         # Check 3: Academic dishonesty
-        dishonesty_keywords = ["write my paper", "plagiarize", "cheat", "fake data"]
-        for keyword in dishonesty_keywords:
-            if keyword in query.lower():
+        dishonesty_patterns = [
+            "write my paper", "write my research", "do my assignment",
+            "plagiarize", "cheat", "fake data", "write my essay"
+        ]
+        query_lower = query.lower()
+        for pattern in dishonesty_patterns:
+            if pattern in query_lower:
                 violations.append({
                     "category": "academic_dishonesty",
-                    "reason": "Query suggests academic dishonesty",
+                    "reason": f"Query suggests academic dishonesty: '{pattern}'",
                     "severity": "high"
                 })
+                break  # Only report once
 
         # Check 4: Use Guardrails AI if available
         if self.use_guardrails_ai:

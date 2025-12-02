@@ -16,6 +16,30 @@ A multi-agent literature review system powered by LangGraph, Groq API, and Seman
 - **LLM-as-a-Judge Evaluation**: Comprehensive evaluation with 6 criteria
 - **Citation Management**: Automatic APA-style citation generation
 
+## 🎬 Demo
+
+### System UI Screenshot
+The web interface provides an intuitive experience with:
+- **Gradient hero header** with system branding
+- **Real-time agent activity traces** showing each agent's actions
+- **Tavily web search indicator** (green badge when used)
+- **LLM Judge evaluation scores** with detailed breakdown
+- **Safety event notifications** when content is flagged
+
+![Streamlit UI](artifacts/ui_screenshot.png)
+*Main interface showing query input, agent traces, and evaluation results*
+
+### Sample Outputs
+
+**📄 Full Session Export**: [`artifacts/sample_session.json`](artifacts/sample_session.json)  
+Complete JSON export of an end-to-end session including all agent traces, papers found, and judge evaluation.
+
+**📝 Literature Review**: [`artifacts/sample_review.md`](artifacts/sample_review.md)  
+Sample generated literature review on "Design patterns for accessible user interfaces in mobile applications" with 8 papers analyzed.
+
+**⚖️ Judge Evaluation**: [`artifacts/judge_evaluation_results.json`](artifacts/judge_evaluation_results.json)  
+LLM-as-a-Judge results from evaluating 5 diverse queries with detailed scoring breakdown.
+
 ## 📁 Project Structure
 
 ```
@@ -173,6 +197,63 @@ You can customize agent behaviors by editing `config.yaml` if needed.
 ---
 
 ## 🚀 Running the System
+
+### Quick Start (Single Command Demo)
+
+To run a complete end-to-end demonstration with all agents:
+
+```bash
+python main.py --mode test
+```
+
+**This will:**
+1. ✅ Run safety checks on the input query
+2. 📋 Create a search strategy (Planner agent)
+3. 🌐 Search with Tavily for supplementary sources
+4. 🔍 Find academic papers via SerpAPI/Google Scholar (Researcher agent)
+5. 🔬 Analyze patterns and themes (Analyzer agent)
+6. ✍️ Draft a literature review (Writer agent)
+7. ✅ Quality check the draft
+8. 🛡️ Safety check the output
+9. ⚖️ Evaluate with LLM-as-a-Judge
+
+**Expected Output:**
+- Complete literature review (6000+ characters)
+- 8-10 academic papers with citations
+- Agent execution traces showing all steps
+- Judge evaluation score (typically 7-9/10)
+- Duration: ~20-30 seconds
+
+**Sample Output Location:** `outputs/test_run_sample.log`
+
+---
+
+### Web Interface (Recommended)
+
+Launch the interactive Streamlit UI:
+
+```bash
+python main.py --mode web
+# OR
+streamlit run src/ui/streamlit_app.py
+```
+
+Then open your browser to **http://localhost:8501**
+
+**Features:**
+- 🎨 Beautiful gradient UI with modern design
+- 📊 Real-time agent activity traces
+- 🌐 Tavily usage indicator (green badge)
+- ⚖️ LLM Judge scores with detailed breakdown
+- 🛡️ Safety event notifications
+- 💾 Session history
+
+**Try these example queries:**
+1. "Design patterns for accessible user interfaces"
+2. "Ethical considerations in AI-driven education"
+3. "Usability challenges in augmented reality interfaces"
+
+---
 
 ### Web Interface (Recommended)
 
