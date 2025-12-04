@@ -1,0 +1,2144 @@
+{
+  "timestamp": "2025-12-02T16:34:09.931092",
+  "num_queries": 5,
+  "query_results": [
+    {
+      "query": "What are the key principles of explainable AI for novice users?",
+      "system_output": {
+        "response": "The increasing adoption of Artificial Intelligence (AI) in various aspects of life has led to a growing need for Explainable AI (XAI), which aims to provide transparent and understandable explanations of AI-driven decisions (Liao & Varshney, 2021). As XAI continues to evolve, it is essential to understand the key principles and design approaches that cater to the needs of novice users. This literature review synthesizes the findings of recent studies on XAI, highlighting the importance of human-centered approaches, explainability principles, and multidisciplinary collaboration.\n\nOne of the primary themes that emerges from the literature is the emphasis on human-centered design approaches for XAI. Liao and Varshney (2021) stress the importance of considering the user's perspective and experience in XAI, highlighting the need for a brief overview of the technical landscape of XAI to inform user experiences. Similarly, Wang et al. (2019) advocate for user-centric design approaches, focusing on the needs and experiences of the end-users. These studies demonstrate a shift towards user-centric design, recognizing that XAI systems must be designed with the user in mind (Liao et al., 2020; Zhu et al., 2018).\n\nAnother crucial aspect of XAI is the development of explainability principles. Phillips et al. (2021) propose four principles of explainable artificial intelligence, including delivering understandable explanations and providing user control over the system. Mohseni et al. (2021) also present a framework for designing and evaluating XAI systems, incorporating user control and accountability principles. These studies highlight the need for standardized guidelines and frameworks for XAI, emphasizing the importance of explainability and transparency (Liao & Varshney, 2021).\n\nThe literature also reveals a growing recognition of the importance of considering user backgrounds and impressions in XAI. Nourani et al. (2022) discuss the importance of user backgrounds and impressions, highlighting the need for XAI systems to be adaptable to different user groups. Similarly, Mohseni et al. (2021) emphasize the importance of considering user backgrounds and impressions in the design of XAI systems. These studies demonstrate that XAI systems must be designed to accommodate diverse user groups and contexts (Liao et al., 2020).\n\nIn terms of design methodologies, the literature presents various approaches, including user-centric design (Wang et al., 2019), heuristic-based design (Liao et al., 2020), and mixed-initiative co-creation (Zhu et al., 2018). These approaches have their strengths and limitations, and the choice of design methodology depends on the specific context and user group. For example, heuristic-based design may be more suitable for certain user groups or applications, while principle-based approaches may provide a more structured framework for designing XAI systems (Phillips et al., 2021; Mohseni et al., 2021).\n\nThe literature also highlights the importance of multidisciplinary collaboration in XAI. Mohseni et al. (2021) present a multidisciplinary survey and framework for design and evaluation of XAI systems, incorporating insights from human-computer interaction, artificial intelligence, and design. Similarly, Dhanorkar et al. (2021) emphasize the need for broadening the XAI design space by looking at explanations across the AI lifecycle. These studies demonstrate that XAI requires collaboration across disciplines, presenting opportunities for researchers from diverse backgrounds to contribute to the field (Liao & Varshney, 2021).\n\nDespite the progress made in XAI, there are still research gaps and opportunities. Liao and Varshney (2021) highlight the importance of conducting user studies to better understand user needs and experiences in XAI. Nourani et al. (2022) also suggest that more research is needed to understand the impact of user backgrounds and impressions on XAI systems. Additionally, there is a need for more research on standardization and guidelines for XAI, as well as the development of more effective design methodologies (Phillips et al., 2021; Mohseni et al., 2021).\n\nIn conclusion, this literature review highlights the key principles and design approaches for XAI, emphasizing the importance of human-centered design, explainability principles, and multidisciplinary collaboration. The studies reviewed demonstrate a growing recognition of the need for XAI systems that cater to the needs of novice users, and highlight the importance of considering user backgrounds and impressions. While there are still research gaps and opportunities, the field of XAI is evolving rapidly, with a increasing emphasis on multidisciplinary collaboration and standardization. Future research should focus on addressing these gaps, developing more effective design methodologies, and establishing standardized guidelines and frameworks for XAI (Liao & Varshney, 2021; Mohseni et al., 2021).\n\nReferences:\nDhanorkar, S., Wolf, C. T., Qian, K., et al. (2021). Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle.\n\nLiao, Q. V., & Varshney, K. R. (2021). Human-centered explainable ai (xai): From algorithms to user experiences.\n\nLiao, Q. V., Gruen, D., & Miller, S. (2020). Questioning the AI: informing design practices for explainable AI user experiences.\n\nMohseni, S., Zarei, N., & Ragan, E. D. (2021). A multidisciplinary survey and framework for design and evaluation of explainable AI systems.\n\nNourani, M., Roy, C., Block, J. E., et al. (2022). On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications.\n\nPhillips, P. J., Phillips, P. J., Hahn, C. A., et al. (2021). Four principles of explainable artificial intelligence.\n\nWang, D., Yang, Q., Abdul, A., et al. (2019). Designing theory-driven user-centric explainable AI.\n\nZhu, J., Liapis, A., Risi, S., et al. (2018). Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation.",
+        "bibliography": [
+          "Dhanorkar, S., et al. (2021). Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle. https://dl.acm.org/doi/abs/10.1145/3461778.3462131",
+          "Ferreira, J., & Monteiro, M. (2020). What are people doing about XAI user experience? A survey on AI explainability research and practice. https://link.springer.com/chapter/10.1007/978-3-030-49760-6_4",
+          "Liao, Q., & Varshney, K. (2021). Human-centered explainable ai (xai): From algorithms to user experiences. https://arxiv.org/abs/2110.10790",
+          "Liao, Q., et al. (2020). Questioning the AI: informing design practices for explainable AI user experiences. https://dl.acm.org/doi/abs/10.1145/3313831.3376590",
+          "Mohseni, S., et al. (2021). A multidisciplinary survey and framework for design and evaluation of explainable AI systems. https://dl.acm.org/doi/abs/10.1145/3387166",
+          "Nourani, M., et al. (2022). On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications. https://dl.acm.org/doi/abs/10.1145/3531066",
+          "Phillips, P., et al. (2021). Four principles of explainable artificial intelligence. https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+          "Wang, D., et al. (2019). Designing theory-driven user-centric explainable AI. https://dl.acm.org/doi/abs/10.1145/3290605.3300831",
+          "Zhu, J., et al. (2018). Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation. https://ieeexplore.ieee.org/abstract/document/8490433/"
+        ],
+        "papers": [
+          {
+            "paper_id": "9Wdc_FMXthcJ",
+            "title": "Human-centered explainable ai (xai): From algorithms to user experiences",
+            "authors": [
+              {
+                "name": "QV Liao"
+              },
+              {
+                "name": "KR Varshney"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 Before getting to these points, we will start with a brief overview of the technical landscape \u2026 For example, a study found that AI novices, compared to experts, not only had less \u2026",
+            "citation_count": 411,
+            "url": "https://arxiv.org/abs/2110.10790",
+            "venue": "",
+            "pdf_url": "https://arxiv.org/pdf/2110.10790",
+            "type": "paper"
+          },
+          {
+            "paper_id": "-_Olyrfn9ZoJ",
+            "title": "Questioning the AI: informing design practices for explainable AI user experiences",
+            "authors": [
+              {
+                "name": "QV Liao"
+              },
+              {
+                "name": "D Gruen"
+              },
+              {
+                "name": "S Miller"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 for both: 1) general principles of what types of explainability should be provided, as heuristic \u2026 might have been greater, and the current status of XAI more advanced. We do not claim the \u2026",
+            "citation_count": 1190,
+            "url": "https://dl.acm.org/doi/abs/10.1145/3313831.3376590",
+            "venue": "",
+            "pdf_url": "https://arxiv.org/pdf/2001.02478",
+            "type": "paper"
+          },
+          {
+            "paper_id": "KguBFjiYiqoJ",
+            "title": "Four principles of explainable artificial intelligence",
+            "authors": [
+              {
+                "name": "PJ Phillips"
+              },
+              {
+                "name": "PJ Phillips"
+              },
+              {
+                "name": "CA Hahn"
+              },
+              {
+                "name": "PC Fontana\u2026"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 We propose that explainable AI systems deliver \u2026 tions that are understandable to individual users; provide explanations that \u2026 We present four fundamental principles for explainable AI \u2026",
+            "citation_count": 427,
+            "url": "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+            "venue": "",
+            "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+            "type": "paper"
+          },
+          {
+            "paper_id": "b8ctc0WS0g4J",
+            "title": "Designing theory-driven user-centric explainable AI",
+            "authors": [
+              {
+                "name": "D Wang"
+              },
+              {
+                "name": "Q Yang"
+              },
+              {
+                "name": "A Abdul"
+              },
+              {
+                "name": "BY Lim"
+              }
+            ],
+            "year": 2019,
+            "abstract": "\u2026 this can also lead to cognitive bias for inexperienced people. \u2026 artificial intelligence to develop user-centric explainable AI (XAI). \u2026 build more user-centric explainable AI-based systems. \u2026",
+            "citation_count": 1220,
+            "url": "https://dl.acm.org/doi/abs/10.1145/3290605.3300831",
+            "venue": "",
+            "pdf_url": "https://www.researchgate.net/profile/Qian-Yang-19/publication/330967106_Designing_Theory-Driven_User-Centric_Explainable_AI/links/5c5d7e9d45851582c3d613f9/Designing-Theory-Driven-User-Centric-Explainable-AI.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "UIhLquiIPkkJ",
+            "title": "Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation",
+            "authors": [
+              {
+                "name": "J Zhu"
+              },
+              {
+                "name": "A Liapis"
+              },
+              {
+                "name": "S Risi"
+              },
+              {
+                "name": "R Bidarra\u2026"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 eXplainable AI for Designers (XAID), specifically for game designers. By focusing on a specific user \u2026 the explanation starting from the most important points regardless of when they were \u2026",
+            "citation_count": 405,
+            "url": "https://ieeexplore.ieee.org/abstract/document/8490433/",
+            "venue": "",
+            "pdf_url": "https://pure.itu.dk/ws/files/83703474/zhu_cig18.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "PRWTz3D3cO0J",
+            "title": "On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications",
+            "authors": [
+              {
+                "name": "M Nourani"
+              },
+              {
+                "name": "C Roy"
+              },
+              {
+                "name": "JE Block"
+              },
+              {
+                "name": "DR Honeycutt\u2026"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 Since we desired a task where users are novices and do not \u2026 We reference existing literature as examples of points for \u2026 model formation and user reliance in explainable AI systems. \u2026",
+            "citation_count": 27,
+            "url": "https://dl.acm.org/doi/abs/10.1145/3531066",
+            "venue": "",
+            "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3531066",
+            "type": "paper"
+          },
+          {
+            "paper_id": "d-zmC0h9EK4J",
+            "title": "What are people doing about XAI user experience? A survey on AI explainability research and practice",
+            "authors": [
+              {
+                "name": "JJ Ferreira"
+              },
+              {
+                "name": "MS Monteiro"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 eXplainable AI (XAI) and needs to be combined with other data so it can have significant meaning for users\u2026 systems users in video entertainment [49] and design principles for social \u2026",
+            "citation_count": 121,
+            "url": "https://link.springer.com/chapter/10.1007/978-3-030-49760-6_4",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "9_uHQXAaDh0J",
+            "title": "A multidisciplinary survey and framework for design and evaluation of explainable AI systems",
+            "authors": [
+              {
+                "name": "S Mohseni"
+              },
+              {
+                "name": "N Zarei"
+              },
+              {
+                "name": "ED Ragan"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 They suggest user control over the system as a principle to support the accountability of a \u2026 goals with their three user groups: AI novices (ie, general AI product end-user), data experts (\u2026",
+            "citation_count": 1037,
+            "url": "https://dl.acm.org/doi/abs/10.1145/3387166",
+            "venue": "",
+            "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3387166",
+            "type": "paper"
+          },
+          {
+            "paper_id": "JU0fyQFrms8J",
+            "title": "Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle",
+            "authors": [
+              {
+                "name": "S Dhanorkar"
+              },
+              {
+                "name": "CT Wolf"
+              },
+              {
+                "name": "K Qian"
+              },
+              {
+                "name": "A Xu"
+              },
+              {
+                "name": "L Popa\u2026"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 with AI end-users or clients. Undeniably, including real \u2026 projects, specifically practices in relation to AI model touchpoints\u2026 with equations in the beginning and then changing course to \u2026",
+            "citation_count": 166,
+            "url": "https://dl.acm.org/doi/abs/10.1145/3461778.3462131",
+            "venue": "",
+            "pdf_url": "https://yunyaoli.github.io/files/dis21-XAI.pdf",
+            "type": "paper"
+          }
+        ],
+        "agent_traces": [
+          {
+            "agent": "SafetyManager",
+            "action": "Input passed safety check",
+            "timestamp": "2025-12-02T16:34:09.934002"
+          },
+          {
+            "agent": "Planner",
+            "action": "Created search strategy",
+            "details": "**Key Concepts:**\n- Explainable AI (XAI)\n- Novice users\n- Artificial Intelligence (AI) transparency\n- Machine Learning (ML) interpretability\n- Human-Computer Interaction (HCI)\n- User-centered design\n-...",
+            "timestamp": "2025-12-02T16:34:11.158193",
+            "duration_seconds": 1.223888
+          },
+          {
+            "agent": "Researcher",
+            "action": "\ud83c\udf10 Used Tavily Web Search - Found 5 supplementary sources",
+            "details": "Tavily search for: 'What are the key principles of explainable AI for novice users?'",
+            "timestamp": "2025-12-02T16:34:13.733368",
+            "tool": "tavily",
+            "duration_seconds": 0.5
+          },
+          {
+            "agent": "Researcher",
+            "action": "Found 9 relevant papers",
+            "details": "Papers from 2018 to 2022",
+            "timestamp": "2025-12-02T16:34:13.733424",
+            "duration_seconds": 2.574466
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 9 papers",
+            "timestamp": "2025-12-02T16:34:16.798839",
+            "duration_seconds": 3.063727
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 6065 characters, 9 citations",
+            "timestamp": "2025-12-02T16:34:20.381663",
+            "duration_seconds": 3.581789
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft approved",
+            "timestamp": "2025-12-02T16:34:20.382735"
+          },
+          {
+            "agent": "SafetyManager",
+            "action": "Output passed safety check",
+            "timestamp": "2025-12-02T16:34:20.393199"
+          },
+          {
+            "agent": "Judge",
+            "action": "Evaluated output quality - Score: 8.2/10",
+            "details": "Criteria evaluated: relevance_coverage, evidence_quality, comparative_analysis, factual_accuracy, safety_compliance, clarity_organization",
+            "timestamp": "2025-12-02T16:34:37.746348",
+            "duration_seconds": 17.352559,
+            "evaluation": {
+              "query": "What are the key principles of explainable AI for novice users?",
+              "criteria_scores": {
+                "relevance_coverage": {
+                  "score": 8.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.6,
+                  "description": "Coverage of relevant papers and appropriateness of scope"
+                },
+                "evidence_quality": {
+                  "score": 8.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.6,
+                  "description": "Quality and authority of sources, proper citations"
+                },
+                "comparative_analysis": {
+                  "score": 8.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.6,
+                  "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+                },
+                "factual_accuracy": {
+                  "score": 8.0,
+                  "weight": 0.15,
+                  "weighted_score": 1.2,
+                  "description": "Correctness of paper details, no hallucinated references"
+                },
+                "safety_compliance": {
+                  "score": 10.0,
+                  "weight": 0.1,
+                  "weighted_score": 1.0,
+                  "description": "No prohibited content, appropriate academic tone"
+                },
+                "clarity_organization": {
+                  "score": 8.0,
+                  "weight": 0.15,
+                  "weighted_score": 1.2,
+                  "description": "Logical structure, clear writing, smooth transitions"
+                }
+              },
+              "overall_score": 8.200000000000001,
+              "feedback": {
+                "relevance_coverage": "The literature review demonstrates a good coverage of relevant papers, with a clear scope that aligns with the research topic of explainable AI for novice users. The review includes a range of studies that highlight the importance of human-centered design, explainability principles, and multidisciplinary collaboration in XAI. The papers cited, such as Liao and Varshney (2021), Phillips et al. (2021), and Mohseni et al. (2021), are highly relevant to the topic and provide a solid foundation for the review.\n\nThe review also includes different perspectives, such as the importance of user backgrounds and impressions (Nourani et al., 2022), and the need for standardized guidelines and frameworks for XAI (Phillips et al., 2021; Mohseni et al., 2021). The inclusion of various design methodologies, such as user-centric design (Wang et al., 2019) and heuristic-based design (Liao et al., 2020), adds to the comprehensiveness of the review.\n\nHowever, the review could be improved by including more recent studies or works that provide a more in-depth analysis of the topic. Additionally, some major works in the field of XAI, such as those related to model interpretability and transparency, are not explicitly mentioned. The review could also benefit from a more critical evaluation of the papers cited, rather than simply presenting their findings.\n\nOverall, the review provides a good overview of the key principles and design approaches for XAI, but could be strengthened by a more comprehensive coverage of relevant papers and a more in-depth analysis of the topic. The score of 8 reflects the review's strengths in terms of relevance and scope, but also acknowledges the potential for improvement in terms of comprehensiveness and critical evaluation.",
+                "evidence_quality": "The literature review demonstrates a good quality and authority of sources, with proper citation formatting. The sources cited are from reputable venues and journals, such as ACM and arXiv, which indicates a high level of authority in the field of Explainable AI. The inclusion of highly-cited papers, such as Liao and Varshney (2021) and Mohseni et al. (2021), adds to the credibility of the review.\n\nThe citation formatting is mostly proper, with a consistent use of APA style throughout the review. However, there are a few instances where the citations could be improved, such as adding the DOI links for all sources, not just the ones listed at the end.\n\nThe placement of citations in the text is generally appropriate, with sources cited to support specific claims and ideas. However, there are a few instances where the citations could be more specific, such as citing a particular page or section of a source rather than the entire paper.\n\nOne area for improvement is the inclusion of more diverse sources, such as books or conference proceedings, to add to the breadth of the review. Additionally, some sources, such as Ferreira and Monteiro (2020), are not cited in the review despite being listed in the citations section.\n\nOverall, the review demonstrates a good understanding of the field of Explainable AI and a strong ability to synthesize and cite relevant sources. With some minor improvements to citation formatting and source diversity, the review could be even stronger.\n\nStrengths:\n\n* Use of reputable sources from top-tier venues and journals\n* Inclusion of highly-cited papers to add credibility to the review\n* Consistent use of APA style citation formatting\n\nWeaknesses:\n\n* Some citations could be improved with the addition of DOI links\n* Citation placement could be more specific in some instances\n* Limited diversity of sources, with a focus primarily on journal articles and conference papers\n* Some sources listed in the citations section are not cited in the review itself.",
+                "comparative_analysis": "The literature review demonstrates a good comparative analysis with clear patterns, identifying common themes and patterns in the field of Explainable AI (XAI). The review effectively compares and contrasts different approaches, such as human-centered design, user-centric design, and principle-based approaches, highlighting their strengths and limitations. The state-of-the-art is also discussed, with an emphasis on the importance of multidisciplinary collaboration, standardization, and guidelines for XAI.\n\nThe review synthesizes the findings of recent studies, highlighting the importance of considering user backgrounds and impressions, and the need for adaptable XAI systems. The analysis of methodologies is also thorough, with a discussion of the pros and cons of different design approaches. The review identifies research gaps and opportunities, such as the need for more user studies and standardization, and provides a clear conclusion that summarizes the key principles and design approaches for XAI.\n\nHowever, the review could be improved by providing a more in-depth analysis of the comparisons between different approaches. For example, the review mentions that heuristic-based design may be more suitable for certain user groups or applications, but does not provide a detailed comparison of this approach with other methods. Additionally, the review could benefit from a more critical evaluation of the methodologies and approaches discussed, highlighting potential biases or limitations.\n\nOverall, the review demonstrates a good understanding of the field of XAI and provides a clear and well-organized discussion of the key principles and design approaches. With some further refinement and depth in the comparative analysis, the review could achieve an even higher score. \n\nStrengths:\n- Clear identification of common themes and patterns\n- Effective comparison and contrast of different approaches\n- Good discussion of the state-of-the-art and research gaps\n- Thorough analysis of methodologies\n\nWeaknesses:\n- Could benefit from more in-depth analysis of comparisons between approaches\n- Limited critical evaluation of methodologies and approaches\n- Some areas of discussion could be more detailed and nuanced.",
+                "factual_accuracy": "The literature review demonstrates a high level of factual accuracy, with correct paper titles, authors, and years for the most part. The claims made in the review are properly supported by cited papers, and the information is consistent throughout. However, there are a few minor issues that prevent the review from receiving a perfect score.\n\nOne minor issue is the lack of page numbers or DOI links for the cited papers, which makes it difficult to verify the accuracy of the citations. Additionally, some of the citations are not explicitly linked to specific claims or findings in the review, which can make it hard to follow the argument.\n\nAnother minor issue is the presence of a few vague statements, such as the claim that \"the field of XAI is evolving rapidly\" without a specific citation to support this assertion. While this statement is likely true, it would be more convincing with a concrete reference to a recent study or review.\n\nThe review also cites a range of papers from 2018 to 2022, which suggests that the authors have made an effort to engage with recent research in the field. The references are also diverse, including papers from different authors and publications, which adds to the credibility of the review.\n\nOverall, the literature review demonstrates a strong commitment to factual accuracy and proper citation practices. With a few minor revisions to address the issues mentioned above, the review could be even stronger. Specific strengths of the review include its clear and concise writing style, its effective use of transitions to connect ideas between paragraphs, and its thoughtful engagement with the research literature. Weaknesses include the lack of page numbers or DOI links for cited papers, vague statements without explicit citations, and minor inconsistencies in formatting.",
+                "safety_compliance": "The literature review demonstrates a perfectly appropriate academic tone, maintaining a professional and objective stance throughout. The language used is formal and free of biased or offensive content, making it suitable for an academic context. The review synthesizes the findings of recent studies on Explainable AI (XAI) in a clear and concise manner, highlighting key principles and design approaches for novice users. The inclusion of multiple references from reputable sources adds to the credibility of the review. The text is well-structured, and the author provides a comprehensive overview of the topic, addressing the importance of human-centered design, explainability principles, and multidisciplinary collaboration. The review also identifies research gaps and opportunities, demonstrating a thorough understanding of the subject matter. Overall, the literature review meets the highest standards of academic writing, with no apparent weaknesses or areas for improvement in terms of tone, language, or content. The author's use of transitional phrases and sentences effectively connects the different sections of the review, creating a cohesive and engaging narrative. The references are properly cited, and the review provides a balanced view of the topic, discussing both the strengths and limitations of different design approaches. The author's writing style is clear, concise, and easy to follow, making the review accessible to a wide range of readers.",
+                "clarity_organization": "The literature review is well-structured and organized, with a clear introduction that sets the context for the topic of Explainable AI (XAI) and its importance for novice users. The review is divided into logical sections, each focusing on a specific aspect of XAI, such as human-centered design approaches, explainability principles, and multidisciplinary collaboration. The transitions between sections are generally smooth, with each section building on the previous one to create a cohesive narrative.\n\nThe writing is clear and easy to follow, with technical terms and concepts explained in a way that is accessible to a non-expert audience. The use of transitional phrases and sentences helps to connect the different ideas and sections, creating a logical flow of ideas. The review also does a good job of summarizing the key findings of the source papers and synthesizing them into a coherent overview of the current state of XAI research.\n\nOne area for improvement is that the review could benefit from more explicit connections between the different sections and ideas. At times, the transitions between sections feel a bit abrupt, and it is not always clear how the different ideas and concepts fit together. Additionally, some of the sentences are quite long and convoluted, which can make them difficult to follow. Finally, the review could benefit from a more detailed conclusion that summarizes the main findings and implications of the review, and provides a clearer direction for future research.\n\nOverall, however, the review is well-organized and clearly written, making it easy to follow and understand the key principles and design approaches for XAI. With some minor revisions to address the areas mentioned above, the review could be even stronger and more effective at communicating its message to the reader."
+              }
+            }
+          }
+        ],
+        "safety_events": [],
+        "metadata": {
+          "query": "What are the key principles of explainable AI for novice users?",
+          "num_papers": 9,
+          "num_citations": 9,
+          "num_revisions": 0,
+          "input_safe": true,
+          "output_safe": true,
+          "duration_seconds": 27.816098,
+          "timestamp": "2025-12-02T16:34:09.931104",
+          "success": true
+        }
+      },
+      "evaluation": {
+        "query": "What are the key principles of explainable AI for novice users?",
+        "criteria_scores": {
+          "relevance_coverage": {
+            "score": 8.0,
+            "weight": 0.2,
+            "weighted_score": 1.6,
+            "description": "Coverage of relevant papers and appropriateness of scope"
+          },
+          "evidence_quality": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Quality and authority of sources, proper citations"
+          },
+          "comparative_analysis": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+          },
+          "factual_accuracy": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Correctness of paper details, no hallucinated references"
+          },
+          "safety_compliance": {
+            "score": 5.0,
+            "weight": 0.1,
+            "weighted_score": 0.5,
+            "description": "No prohibited content, appropriate academic tone"
+          },
+          "clarity_organization": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Logical structure, clear writing, smooth transitions"
+          }
+        },
+        "overall_score": 5.6,
+        "feedback": {
+          "relevance_coverage": "The literature review provides a good coverage of relevant papers on the topic of explainable AI for novice users, with a clear scope that focuses on human-centered design approaches, explainability principles, and multidisciplinary collaboration. The review includes a range of recent studies (2018-2022) that demonstrate a growing recognition of the need for XAI systems that cater to the needs of novice users. The inclusion of papers from various authors, such as Liao and Varshney (2021), Phillips et al. (2021), and Mohseni et al. (2021), provides a comprehensive overview of the current state of research in XAI.\n\nThe review also highlights the importance of considering user backgrounds and impressions in XAI, which is a crucial aspect of designing effective XAI systems. The discussion of different design methodologies, such as user-centric design, heuristic-based design, and mixed-initiative co-creation, provides a thorough understanding of the various approaches being explored in the field.\n\nHowever, there are a few areas where the review could be improved. Firstly, the review could benefit from a more in-depth analysis of the papers, rather than just summarizing their main points. This would provide a more nuanced understanding of the research and its implications. Secondly, the review could include more papers from other disciplines, such as philosophy or sociology, to provide a more interdisciplinary perspective on XAI. Finally, the review could benefit from a more critical evaluation of the papers, highlighting their strengths and limitations, and discussing the implications of the research for practice and policy.\n\nOverall, the review provides a good foundation for understanding the key principles and design approaches for XAI, but could be strengthened by a more in-depth analysis, a broader range of perspectives, and a more critical evaluation of the research. The score of 8 reflects the review's strengths in terms of coverage and scope, but also acknowledges the areas where it could be improved.",
+          "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99625, Requested 1869. Please try again in 21m30.816s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99625, Requested 1576. Please try again in 17m17.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99625, Requested 1585. Please try again in 17m25.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99625, Requested 1565. Please try again in 17m8.16s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99625, Requested 1578. Please try again in 17m19.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "query": "How has AR usability evolved in the past 5 years?",
+      "system_output": {
+        "response": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99997, Requested 718. Please try again in 10m17.76s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "bibliography": [
+          "Bozzelli, G., et al. (2019). An integrated VR/AR framework for user-centric interactive experience of cultural heritage: The ArkaeVision project. https://www.sciencedirect.com/science/article/pii/S2212054819300232",
+          "Cipresso, P., et al. (2018). The past, present, and future of virtual and augmented reality research: a network and cluster analysis of the literature. https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02086/full",
+          "Derby, J., & Chaparro, B. (2021). The challenges of evaluating the usability of augmented reality (AR). https://journals.sagepub.com/doi/abs/10.1177/1071181321651315",
+          "Dey, A., et al. (2018). A systematic review of 10 years of augmented reality usability studies: 2005 to 2014. https://www.frontiersin.org/articles/10.3389/frobt.2018.00037/full",
+          "Dhanorkar, S., et al. (2021). Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle. https://dl.acm.org/doi/abs/10.1145/3461778.3462131",
+          "Ferreira, J., & Monteiro, M. (2020). What are people doing about XAI user experience? A survey on AI explainability research and practice. https://link.springer.com/chapter/10.1007/978-3-030-49760-6_4",
+          "Garz\u00f3n, J. (2021). An overview of twenty-five years of augmented reality in education. https://www.mdpi.com/2414-4088/5/7/37",
+          "Kim, K., et al. (2018). Revisiting trends in augmented reality research: A review of the 2nd decade of ISMAR (2008\u20132017). https://ieeexplore.ieee.org/abstract/document/8456568/",
+          "Lacoche, J., et al. (2022). Evaluating usability and user experience of AR applications in VR simulation. https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.881318/full",
+          "Liao, Q., & Varshney, K. (2021). Human-centered explainable ai (xai): From algorithms to user experiences. https://arxiv.org/abs/2110.10790",
+          "Liao, Q., et al. (2020). Questioning the AI: informing design practices for explainable AI user experiences. https://dl.acm.org/doi/abs/10.1145/3313831.3376590",
+          "Mohseni, S., et al. (2021). A multidisciplinary survey and framework for design and evaluation of explainable AI systems. https://dl.acm.org/doi/abs/10.1145/3387166",
+          "Mu\u00f1oz, L. (2020). Augmented and virtual reality evolution and future tendency. https://www.mdpi.com/2076-3417/10/1/322",
+          "Nourani, M., et al. (2022). On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications. https://dl.acm.org/doi/abs/10.1145/3531066",
+          "Phillips, P., et al. (2021). Four principles of explainable artificial intelligence. https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+          "Wang, D., et al. (2019). Designing theory-driven user-centric explainable AI. https://dl.acm.org/doi/abs/10.1145/3290605.3300831",
+          "Zhu, J., et al. (2018). Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation. https://ieeexplore.ieee.org/abstract/document/8490433/"
+        ],
+        "papers": [
+          {
+            "paper_id": "R8UoZ8qJjqAJ",
+            "title": "A systematic review of 10 years of augmented reality usability studies: 2005 to 2014",
+            "authors": [
+              {
+                "name": "A Dey"
+              },
+              {
+                "name": "M Billinghurst"
+              },
+              {
+                "name": "RW Lindeman\u2026"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 research, and to provide a high-level view of how that landscape has changed. We \u2026 the AR community improve usability, this paper provides an overview of 10 years of AR user \u2026",
+            "citation_count": 581,
+            "url": "https://www.frontiersin.org/articles/10.3389/frobt.2018.00037/full",
+            "venue": "",
+            "pdf_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2018.00037/pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "J59_MJb3l-4J",
+            "title": "Revisiting trends in augmented reality research: A review of the 2nd decade of ISMAR (2008\u20132017)",
+            "authors": [
+              {
+                "name": "K Kim"
+              },
+              {
+                "name": "M Billinghurst"
+              },
+              {
+                "name": "G Bruder\u2026"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 Over the previous ten years, however, these numbers have changed. We now see a significant \u2026 that evaluates user experience with commercial AR applications. Outside ISMAR there \u2026",
+            "citation_count": 453,
+            "url": "https://ieeexplore.ieee.org/abstract/document/8456568/",
+            "venue": "",
+            "pdf_url": "https://par.nsf.gov/servlets/purl/10105851",
+            "type": "paper"
+          },
+          {
+            "paper_id": "OsgtTQ7DlHsJ",
+            "title": "Evaluating usability and user experience of AR applications in VR simulation",
+            "authors": [
+              {
+                "name": "J Lacoche"
+              },
+              {
+                "name": "E Villain"
+              },
+              {
+                "name": "A Foulonneau"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 conditions of a user study that was performed more than 10 years earlier, including the method \u2026 and VR devices interaction and tracking capacities, and the future evolution of haptic \u2026",
+            "citation_count": 57,
+            "url": "https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.881318/full",
+            "venue": "",
+            "pdf_url": "https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.881318/pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "XU7NIDjwIxYJ",
+            "title": "The past, present, and future of virtual and augmented reality research: a network and cluster analysis of the literature",
+            "authors": [
+              {
+                "name": "P Cipresso"
+              },
+              {
+                "name": "IAC Giglioli"
+              },
+              {
+                "name": "MA Raya"
+              },
+              {
+                "name": "G Riva"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 their usability have begun to test in several field of application. \u2026 However, if we consider just the last 5 years, these \u2026 highlighted the evolution and development of VR and AR research \u2026",
+            "citation_count": 1686,
+            "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02086/full",
+            "venue": "",
+            "pdf_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.02086/pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "oJ9RDc_l8vwJ",
+            "title": "The challenges of evaluating the usability of augmented reality (AR)",
+            "authors": [
+              {
+                "name": "JL Derby"
+              },
+              {
+                "name": "BS Chaparro"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 of these products to gain insights about what should be changed to make the \u2026 usability of AR applications. We will describe the challenges of these methods as they apply to AR usability \u2026",
+            "citation_count": 37,
+            "url": "https://journals.sagepub.com/doi/abs/10.1177/1071181321651315",
+            "venue": "",
+            "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/1071181321651315",
+            "type": "paper"
+          },
+          {
+            "paper_id": "aG40-tvKqOEJ",
+            "title": "Augmented and virtual reality evolution and future tendency",
+            "authors": [
+              {
+                "name": "L Mu\u00f1oz"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 After collecting the work database, we analyze the number of publications year by year in order to get the evolution on AR and VR fields. In the same way that this information selection \u2026",
+            "citation_count": 275,
+            "url": "https://www.mdpi.com/2076-3417/10/1/322",
+            "venue": "",
+            "pdf_url": "https://www.mdpi.com/2076-3417/10/1/322",
+            "type": "paper"
+          },
+          {
+            "paper_id": "pLEE4r_CStYJ",
+            "title": "An overview of twenty-five years of augmented reality in education",
+            "authors": [
+              {
+                "name": "J Garz\u00f3n"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 of its evolution, we pose three generations of AR applications \u2026 applications have the potential to improve the usability of AR \u2026 over other AR applications, as for usability, is that people are \u2026",
+            "citation_count": 388,
+            "url": "https://www.mdpi.com/2414-4088/5/7/37",
+            "venue": "",
+            "pdf_url": "https://www.mdpi.com/2414-4088/5/7/37",
+            "type": "paper"
+          },
+          {
+            "paper_id": "sOUJq5-OKZcJ",
+            "title": "An integrated VR/AR framework for user-centric interactive experience of cultural heritage: The ArkaeVision project",
+            "authors": [
+              {
+                "name": "G Bozzelli"
+              },
+              {
+                "name": "A Raia"
+              },
+              {
+                "name": "S Ricciardi"
+              },
+              {
+                "name": "M De Nino\u2026"
+              }
+            ],
+            "year": 2019,
+            "abstract": "\u2026 a more engaging and culturally-qualified user experience. The main goal is the creation of a \u2026 the Swimmer Tomb with Augmented Reality (AR). The emotional component is fundamental \u2026",
+            "citation_count": 205,
+            "url": "https://www.sciencedirect.com/science/article/pii/S2212054819300232",
+            "venue": "",
+            "pdf_url": "https://www.academia.edu/download/119072695/j.daach.2019.e0012420241022-1-eiarrf.pdf",
+            "type": "paper"
+          }
+        ],
+        "agent_traces": [
+          {
+            "agent": "SafetyManager",
+            "action": "Input passed safety check",
+            "timestamp": "2025-12-02T16:34:47.621877"
+          },
+          {
+            "agent": "Planner",
+            "action": "Created search strategy",
+            "details": "**Key Concepts:**\n- Augmented Reality (AR)\n- Usability\n- User Experience (UX)\n- Human-Computer Interaction (HCI)\n- Evolution\n- Trends\n- Evaluation Methods\n- AR Technology\n- Interaction Design\n\n**Searc...",
+            "timestamp": "2025-12-02T16:34:49.994736",
+            "duration_seconds": 2.371896
+          },
+          {
+            "agent": "Researcher",
+            "action": "\ud83c\udf10 Used Tavily Web Search - Found 5 supplementary sources",
+            "details": "Tavily search for: 'How has AR usability evolved in the past 5 years?'",
+            "timestamp": "2025-12-02T16:34:52.533405",
+            "tool": "tavily",
+            "duration_seconds": 0.5
+          },
+          {
+            "agent": "Researcher",
+            "action": "Found 8 relevant papers",
+            "details": "Papers from 2018 to 2022",
+            "timestamp": "2025-12-02T16:34:52.533434",
+            "duration_seconds": 2.538066
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 8 papers",
+            "timestamp": "2025-12-02T16:34:52.600348",
+            "duration_seconds": 0.066264
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 414 characters, 17 citations",
+            "timestamp": "2025-12-02T16:34:52.675704",
+            "duration_seconds": 0.074476
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 1)",
+            "timestamp": "2025-12-02T16:34:52.677009"
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 8 papers",
+            "timestamp": "2025-12-02T16:34:53.043681",
+            "duration_seconds": 0.366062
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 414 characters, 17 citations",
+            "timestamp": "2025-12-02T16:34:53.080384",
+            "duration_seconds": 0.036166
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 2)",
+            "timestamp": "2025-12-02T16:34:53.080679"
+          },
+          {
+            "agent": "SafetyManager",
+            "action": "Output passed safety check",
+            "timestamp": "2025-12-02T16:34:53.082451"
+          },
+          {
+            "agent": "Judge",
+            "action": "Evaluated output quality - Score: 5.0/10",
+            "details": "Criteria evaluated: relevance_coverage, evidence_quality, comparative_analysis, factual_accuracy, safety_compliance, clarity_organization",
+            "timestamp": "2025-12-02T16:34:53.384191",
+            "duration_seconds": 0.301528,
+            "evaluation": {
+              "query": "How has AR usability evolved in the past 5 years?",
+              "criteria_scores": {
+                "relevance_coverage": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Coverage of relevant papers and appropriateness of scope"
+                },
+                "evidence_quality": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Quality and authority of sources, proper citations"
+                },
+                "comparative_analysis": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+                },
+                "factual_accuracy": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Correctness of paper details, no hallucinated references"
+                },
+                "safety_compliance": {
+                  "score": 5.0,
+                  "weight": 0.1,
+                  "weighted_score": 0.5,
+                  "description": "No prohibited content, appropriate academic tone"
+                },
+                "clarity_organization": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Logical structure, clear writing, smooth transitions"
+                }
+              },
+              "overall_score": 5.0,
+              "feedback": {
+                "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 417. Please try again in 5m56.832s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 719. Please try again in 10m17.76s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 409. Please try again in 5m49.919999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 418. Please try again in 5m57.696s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 398. Please try again in 5m40.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 411. Please try again in 5m51.647999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+              }
+            }
+          }
+        ],
+        "safety_events": [],
+        "metadata": {
+          "query": "How has AR usability evolved in the past 5 years?",
+          "num_papers": 8,
+          "num_citations": 17,
+          "num_revisions": 2,
+          "input_safe": true,
+          "output_safe": true,
+          "duration_seconds": 5.77177,
+          "timestamp": "2025-12-02T16:34:47.613462",
+          "success": true
+        }
+      },
+      "evaluation": {
+        "query": "How has AR usability evolved in the past 5 years?",
+        "criteria_scores": {
+          "relevance_coverage": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Coverage of relevant papers and appropriateness of scope"
+          },
+          "evidence_quality": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Quality and authority of sources, proper citations"
+          },
+          "comparative_analysis": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+          },
+          "factual_accuracy": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Correctness of paper details, no hallucinated references"
+          },
+          "safety_compliance": {
+            "score": 5.0,
+            "weight": 0.1,
+            "weighted_score": 0.5,
+            "description": "No prohibited content, appropriate academic tone"
+          },
+          "clarity_organization": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Logical structure, clear writing, smooth transitions"
+          }
+        },
+        "overall_score": 5.0,
+        "feedback": {
+          "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 417. Please try again in 5m56.832s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 719. Please try again in 10m17.76s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 409. Please try again in 5m49.919999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 418. Please try again in 5m57.696s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 398. Please try again in 5m40.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 411. Please try again in 5m51.647999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "query": "What are ethical considerations in using AI for education?",
+      "system_output": {
+        "response": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 681. Please try again in 9m41.472s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "bibliography": [
+          "Akgun, S., & Greenhow, C. (2022). Artificial intelligence in education: Addressing ethical challenges in K-12 settings. https://link.springer.com/article/10.1007/s43681-021-00096-7",
+          "Bozzelli, G., et al. (2019). An integrated VR/AR framework for user-centric interactive experience of cultural heritage: The ArkaeVision project. https://www.sciencedirect.com/science/article/pii/S2212054819300232",
+          "Cipresso, P., et al. (2018). The past, present, and future of virtual and augmented reality research: a network and cluster analysis of the literature. https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02086/full",
+          "Derby, J., & Chaparro, B. (2021). The challenges of evaluating the usability of augmented reality (AR). https://journals.sagepub.com/doi/abs/10.1177/1071181321651315",
+          "Dey, A., et al. (2018). A systematic review of 10 years of augmented reality usability studies: 2005 to 2014. https://www.frontiersin.org/articles/10.3389/frobt.2018.00037/full",
+          "Dhanorkar, S., et al. (2021). Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle. https://dl.acm.org/doi/abs/10.1145/3461778.3462131",
+          "Eden, C., et al. (2024). Integrating AI in education: Opportunities, challenges, and ethical considerations. https://www.researchgate.net/profile/Nneamaka-Onyebuchi-4/publication/379428577_Integrating_AI_in_education_Opportunities_challenges_and_ethical_considerations/links/67e2c626fe0f5a760f90195a/Integrating-AI-in-education-Opportunities-challenges-and-ethical-considerations.pdf",
+          "Ferreira, J., & Monteiro, M. (2020). What are people doing about XAI user experience? A survey on AI explainability research and practice. https://link.springer.com/chapter/10.1007/978-3-030-49760-6_4",
+          "Garz\u00f3n, J. (2021). An overview of twenty-five years of augmented reality in education. https://www.mdpi.com/2414-4088/5/7/37",
+          "Kerr, K. (2020). Ethical considerations when using artificial intelligence-based assistive technologies in education. https://openeducationalberta.ca/educationaltechnologyethics/chapter/ethical-considerations-when-using-artificial-intelligence-based-assistive-technologies-in-education/",
+          "Kim, K., et al. (2018). Revisiting trends in augmented reality research: A review of the 2nd decade of ISMAR (2008\u20132017). https://ieeexplore.ieee.org/abstract/document/8456568/",
+          "Lacoche, J., et al. (2022). Evaluating usability and user experience of AR applications in VR simulation. https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.881318/full",
+          "Li, Z., et al. (2024). Ethical considerations in the use of AI for higher education: A comprehensive guide. https://ieeexplore.ieee.org/abstract/document/10475661/",
+          "Liao, Q., & Varshney, K. (2021). Human-centered explainable ai (xai): From algorithms to user experiences. https://arxiv.org/abs/2110.10790",
+          "Liao, Q., et al. (2020). Questioning the AI: informing design practices for explainable AI user experiences. https://dl.acm.org/doi/abs/10.1145/3313831.3376590",
+          "Lim, T., et al. (2023). Ethical considerations for artificial intelligence in educational assessments. https://www.igi-global.com/chapter/ethical-considerations-for-artificial-intelligence-in-educational-assessments/330829",
+          "Mohseni, S., et al. (2021). A multidisciplinary survey and framework for design and evaluation of explainable AI systems. https://dl.acm.org/doi/abs/10.1145/3387166",
+          "Mu\u00f1oz, L. (2020). Augmented and virtual reality evolution and future tendency. https://www.mdpi.com/2076-3417/10/1/322",
+          "Naseeb, J., & Bhatti, N. (2024). Ethical Considerations of AI in Educational Curriculum. https://www.researchcorridor.org/index.php/MJENC/article/view/14",
+          "Nourani, M., et al. (2022). On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications. https://dl.acm.org/doi/abs/10.1145/3531066",
+          "Phillips, P., et al. (2021). Four principles of explainable artificial intelligence. https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+          "Reiss, M. (2021). The Use of Al in Education: Practicalities and Ethical Considerations.. https://eric.ed.gov/?id=EJ1297682",
+          "Remian, D. (2019). Augmenting education: ethical considerations for incorporating artificial intelligence in education. https://scholarworks.umb.edu/instruction_capstone/52/",
+          "Wang, D., et al. (2019). Designing theory-driven user-centric explainable AI. https://dl.acm.org/doi/abs/10.1145/3290605.3300831",
+          "Zaman, B. I. (2024). Transforming education through AI benefits risks and ethical considerations. https://www.preprints.org/frontend/manuscript/f902e6b0cd358e7f3c2a35d801628df7/download_pub",
+          "Zhu, J., et al. (2018). Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation. https://ieeexplore.ieee.org/abstract/document/8490433/"
+        ],
+        "papers": [
+          {
+            "paper_id": "Gbg4G19g_mUJ",
+            "title": "The Use of Al in Education: Practicalities and Ethical Considerations.",
+            "authors": [
+              {
+                "name": "MJ Reiss"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 AI in education and at the attendant ethical issues it raises. My key conclusion is that \u2026 use of AI for teaching. However, schools are complex organizations and there is little doubt that AI \u2026",
+            "citation_count": 315,
+            "url": "https://eric.ed.gov/?id=EJ1297682",
+            "venue": "",
+            "pdf_url": "https://files.eric.ed.gov/fulltext/EJ1297682.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "pfw5AuYRQGwJ",
+            "title": "Integrating AI in education: Opportunities, challenges, and ethical considerations",
+            "authors": [
+              {
+                "name": "CA Eden"
+              },
+              {
+                "name": "ON Chisom"
+              },
+              {
+                "name": "IS Adeniyi"
+              }
+            ],
+            "year": 2024,
+            "abstract": "\u2026 Integrating Artificial Intelligence (AI) in education presents a promising frontier with \u2026 ethical considerations. This review explores the multifaceted landscape of AI integration in education, \u2026",
+            "citation_count": 200,
+            "url": "https://www.researchgate.net/profile/Nneamaka-Onyebuchi-4/publication/379428577_Integrating_AI_in_education_Opportunities_challenges_and_ethical_considerations/links/67e2c626fe0f5a760f90195a/Integrating-AI-in-education-Opportunities-challenges-and-ethical-considerations.pdf",
+            "venue": "",
+            "pdf_url": "https://www.researchgate.net/profile/Nneamaka-Onyebuchi-4/publication/379428577_Integrating_AI_in_education_Opportunities_challenges_and_ethical_considerations/links/67e2c626fe0f5a760f90195a/Integrating-AI-in-education-Opportunities-challenges-and-ethical-considerations.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "PEJ_ONL7RP8J",
+            "title": "Ethical considerations when using artificial intelligence-based assistive technologies in education",
+            "authors": [
+              {
+                "name": "K Kerr"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 AI-based assistive technologies that use weak AI are the \u2026 question: What are the ethical considerations of using AI in the form of \u2026 This chapter will discuss different ethical concerns and \u2026",
+            "citation_count": 21,
+            "url": "https://openeducationalberta.ca/educationaltechnologyethics/chapter/ethical-considerations-when-using-artificial-intelligence-based-assistive-technologies-in-education/",
+            "venue": "",
+            "pdf_url": "https://openeducationalberta.ca/educationaltechnologyethics/chapter/ethical-considerations-when-using-artificial-intelligence-based-assistive-technologies-in-education/",
+            "type": "paper"
+          },
+          {
+            "paper_id": "HeS7AMGd8MYJ",
+            "title": "Augmenting education: ethical considerations for incorporating artificial intelligence in education",
+            "authors": [
+              {
+                "name": "D Remian"
+              }
+            ],
+            "year": 2019,
+            "abstract": "\u2026 are answered or mitigated, the field must first clarify what those concerns are. \u2026 ethical concerns of AI in education. Keywords: Artificial intelligence, machine learning, education, ethics \u2026",
+            "citation_count": 100,
+            "url": "https://scholarworks.umb.edu/instruction_capstone/52/",
+            "venue": "",
+            "pdf_url": "https://scholarworks.umb.edu/cgi/viewcontent.cgi?article=1054&context=instruction_capstone",
+            "type": "paper"
+          },
+          {
+            "paper_id": "upQCeWJfjPMJ",
+            "title": "Ethical considerations in the use of AI for higher education: A comprehensive guide",
+            "authors": [
+              {
+                "name": "ZX Li"
+              },
+              {
+                "name": "A Dhruv"
+              },
+              {
+                "name": "V Jain"
+              }
+            ],
+            "year": 2024,
+            "abstract": "\u2026 By exploring the ethical aspects of AI in higher education, this paper contributes to the ongoing conversation on the role of AI in education and provides a foundation for future research. \u2026",
+            "citation_count": 23,
+            "url": "https://ieeexplore.ieee.org/abstract/document/10475661/",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "ARHcww_SBbIJ",
+            "title": "Ethical Considerations of AI in Educational Curriculum",
+            "authors": [
+              {
+                "name": "J Naseeb"
+              },
+              {
+                "name": "N Bhatti"
+              }
+            ],
+            "year": 2024,
+            "abstract": "\u2026 opportunities and ethical challenges. This paper explores the ethical considerations associated with incorporating AI technologies into education, focusing on issues such as data \u2026",
+            "citation_count": 6,
+            "url": "https://www.researchcorridor.org/index.php/MJENC/article/view/14",
+            "venue": "",
+            "pdf_url": "https://www.researchcorridor.org/index.php/MJENC/article/download/14/14",
+            "type": "paper"
+          },
+          {
+            "paper_id": "z5hKZ6KDsj0J",
+            "title": "Transforming education through AI benefits risks and ethical considerations",
+            "authors": [
+              {
+                "name": "BU iu Zaman"
+              }
+            ],
+            "year": 2024,
+            "abstract": "\u2026 AI in education, considering potential risks and ethical dilemmas. It is essential to use AI as a tool to support human educators \u2026 The adoption of AI in education holds the promise of \u2026",
+            "citation_count": 82,
+            "url": "https://www.preprints.org/frontend/manuscript/f902e6b0cd358e7f3c2a35d801628df7/download_pub",
+            "venue": "",
+            "pdf_url": "https://www.preprints.org/frontend/manuscript/f902e6b0cd358e7f3c2a35d801628df7/download_pub",
+            "type": "paper"
+          },
+          {
+            "paper_id": "cOnoABEarMgJ",
+            "title": "Ethical considerations for artificial intelligence in educational assessments",
+            "authors": [
+              {
+                "name": "T Lim"
+              },
+              {
+                "name": "S Gottipati"
+              },
+              {
+                "name": "MLF Cheong"
+              }
+            ],
+            "year": 2023,
+            "abstract": "\u2026 ethical principles that may plague the implementation of an AI-based assessment. The objective of this chapter is to examine the landscape of AI-related ethical issues for educational \u2026",
+            "citation_count": 61,
+            "url": "https://www.igi-global.com/chapter/ethical-considerations-for-artificial-intelligence-in-educational-assessments/330829",
+            "venue": "",
+            "pdf_url": "https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=10240&context=sis_research",
+            "type": "paper"
+          },
+          {
+            "paper_id": "tWb75ehk1gwJ",
+            "title": "Artificial intelligence in education: Addressing ethical challenges in K-12 settings",
+            "authors": [
+              {
+                "name": "S Akgun"
+              },
+              {
+                "name": "C Greenhow"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 education, we highlight certain ethical issues that educators \u2026 (EU) has highlighted ethical concerns and implications of AI, \u2026 , and provided guidelines on how trustworthy AI should be [3, \u2026",
+            "citation_count": 1723,
+            "url": "https://link.springer.com/article/10.1007/s43681-021-00096-7",
+            "venue": "",
+            "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8455229/pdf/43681_2021_Article_96.pdf",
+            "type": "paper"
+          }
+        ],
+        "agent_traces": [
+          {
+            "agent": "SafetyManager",
+            "action": "Input passed safety check",
+            "timestamp": "2025-12-02T16:34:53.666227"
+          },
+          {
+            "agent": "Planner",
+            "action": "Created search strategy",
+            "details": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD)...",
+            "timestamp": "2025-12-02T16:34:53.704439",
+            "duration_seconds": 0.037621
+          },
+          {
+            "agent": "Researcher",
+            "action": "\ud83c\udf10 Used Tavily Web Search - Found 5 supplementary sources",
+            "details": "Tavily search for: 'What are ethical considerations in using AI for education?'",
+            "timestamp": "2025-12-02T16:34:56.454450",
+            "tool": "tavily",
+            "duration_seconds": 0.5
+          },
+          {
+            "agent": "Researcher",
+            "action": "Found 9 relevant papers",
+            "details": "Papers from 2019 to 2024",
+            "timestamp": "2025-12-02T16:34:56.454484",
+            "duration_seconds": 2.749334
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 9 papers",
+            "timestamp": "2025-12-02T16:34:56.543395",
+            "duration_seconds": 0.064751
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 414 characters, 26 citations",
+            "timestamp": "2025-12-02T16:34:56.584824",
+            "duration_seconds": 0.041022
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 1)",
+            "timestamp": "2025-12-02T16:34:56.585095"
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 9 papers",
+            "timestamp": "2025-12-02T16:34:56.633848",
+            "duration_seconds": 0.04854
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 414 characters, 26 citations",
+            "timestamp": "2025-12-02T16:34:56.674810",
+            "duration_seconds": 0.04066
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 2)",
+            "timestamp": "2025-12-02T16:34:56.675129"
+          },
+          {
+            "agent": "SafetyManager",
+            "action": "Output passed safety check",
+            "timestamp": "2025-12-02T16:34:56.677325"
+          },
+          {
+            "agent": "Judge",
+            "action": "Evaluated output quality - Score: 5.0/10",
+            "details": "Criteria evaluated: relevance_coverage, evidence_quality, comparative_analysis, factual_accuracy, safety_compliance, clarity_organization",
+            "timestamp": "2025-12-02T16:34:56.926274",
+            "duration_seconds": 0.248644,
+            "evaluation": {
+              "query": "What are ethical considerations in using AI for education?",
+              "criteria_scores": {
+                "relevance_coverage": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Coverage of relevant papers and appropriateness of scope"
+                },
+                "evidence_quality": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Quality and authority of sources, proper citations"
+                },
+                "comparative_analysis": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+                },
+                "factual_accuracy": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Correctness of paper details, no hallucinated references"
+                },
+                "safety_compliance": {
+                  "score": 5.0,
+                  "weight": 0.1,
+                  "weighted_score": 0.5,
+                  "description": "No prohibited content, appropriate academic tone"
+                },
+                "clarity_organization": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Logical structure, clear writing, smooth transitions"
+                }
+              },
+              "overall_score": 5.0,
+              "feedback": {
+                "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 415. Please try again in 5m51.647999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 702. Please try again in 9m59.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 407. Please try again in 5m44.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 416. Please try again in 5m52.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 396. Please try again in 5m35.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 409. Please try again in 5m46.464s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+              }
+            }
+          }
+        ],
+        "safety_events": [],
+        "metadata": {
+          "query": "What are ethical considerations in using AI for education?",
+          "num_papers": 9,
+          "num_citations": 26,
+          "num_revisions": 2,
+          "input_safe": true,
+          "output_safe": true,
+          "duration_seconds": 3.265323,
+          "timestamp": "2025-12-02T16:34:53.661147",
+          "success": true
+        }
+      },
+      "evaluation": {
+        "query": "What are ethical considerations in using AI for education?",
+        "criteria_scores": {
+          "relevance_coverage": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Coverage of relevant papers and appropriateness of scope"
+          },
+          "evidence_quality": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Quality and authority of sources, proper citations"
+          },
+          "comparative_analysis": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+          },
+          "factual_accuracy": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Correctness of paper details, no hallucinated references"
+          },
+          "safety_compliance": {
+            "score": 5.0,
+            "weight": 0.1,
+            "weighted_score": 0.5,
+            "description": "No prohibited content, appropriate academic tone"
+          },
+          "clarity_organization": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Logical structure, clear writing, smooth transitions"
+          }
+        },
+        "overall_score": 5.0,
+        "feedback": {
+          "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 415. Please try again in 5m51.647999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 702. Please try again in 9m59.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 407. Please try again in 5m44.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 416. Please try again in 5m52.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 396. Please try again in 5m35.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99992, Requested 409. Please try again in 5m46.464s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "query": "Compare different approaches to measuring user experience in mobile applications",
+      "system_output": {
+        "response": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 756. Please try again in 10m41.088s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "bibliography": [
+          "Abbasi, M., et al. (2023). Comparing user experience: an analysis of usability testing methods for mobile applications. https://ieeexplore.ieee.org/abstract/document/10211987/",
+          "Abuaddous, H., et al. (2022). Automated User Experience (UX) Testing for Mobile Application: Strengths and Limitations.. https://www.researchgate.net/profile/Hayfa-Abu-Addous/publication/358920763_Automated_User_Experience_UX_Testing_for_Mobile_Application_Strengths_and_Limitations/links/6222371584ce8e5b4d05a7c6/Automated-User-Experience-UX-Testing-for-Mobile-Application-Strengths-and-Limitations.pdf",
+          "Akgun, S., & Greenhow, C. (2022). Artificial intelligence in education: Addressing ethical challenges in K-12 settings. https://link.springer.com/article/10.1007/s43681-021-00096-7",
+          "Al, O. (2023). Why people choose Apps: An evaluation of the ecology and user experience of mobile applications. https://www.sciencedirect.com/science/article/pii/S1071581922001835",
+          "Bozzelli, G., et al. (2019). An integrated VR/AR framework for user-centric interactive experience of cultural heritage: The ArkaeVision project. https://www.sciencedirect.com/science/article/pii/S2212054819300232",
+          "Cipresso, P., et al. (2018). The past, present, and future of virtual and augmented reality research: a network and cluster analysis of the literature. https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02086/full",
+          "Davidavi\u010dien\u0117, V., & Raudeli\u016bnien\u0117\u2026, J. (2021). Evaluation of user experience in augmented reality mobile applications. https://journals.vilniustech.lt/index.php/JBEM/article/view/13999",
+          "Derby, J., & Chaparro, B. (2021). The challenges of evaluating the usability of augmented reality (AR). https://journals.sagepub.com/doi/abs/10.1177/1071181321651315",
+          "Dey, A., et al. (2018). A systematic review of 10 years of augmented reality usability studies: 2005 to 2014. https://www.frontiersin.org/articles/10.3389/frobt.2018.00037/full",
+          "Dhanorkar, S., et al. (2021). Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle. https://dl.acm.org/doi/abs/10.1145/3461778.3462131",
+          "Eden, C., et al. (2024). Integrating AI in education: Opportunities, challenges, and ethical considerations. https://www.researchgate.net/profile/Nneamaka-Onyebuchi-4/publication/379428577_Integrating_AI_in_education_Opportunities_challenges_and_ethical_considerations/links/67e2c626fe0f5a760f90195a/Integrating-AI-in-education-Opportunities-challenges-and-ethical-considerations.pdf",
+          "Ferreira, J., & Monteiro, M. (2020). What are people doing about XAI user experience? A survey on AI explainability research and practice. https://link.springer.com/chapter/10.1007/978-3-030-49760-6_4",
+          "Garz\u00f3n, J. (2021). An overview of twenty-five years of augmented reality in education. https://www.mdpi.com/2414-4088/5/7/37",
+          "Jesus, E., et al. (2022). An Experimental Study on Usability and User Experience Evaluation Techniques in Mobile Applications.. https://www.scitepress.org/PublishedPapers/2022/110830/110830.pdf",
+          "Kerr, K. (2020). Ethical considerations when using artificial intelligence-based assistive technologies in education. https://openeducationalberta.ca/educationaltechnologyethics/chapter/ethical-considerations-when-using-artificial-intelligence-based-assistive-technologies-in-education/",
+          "Kim, K., et al. (2018). Revisiting trends in augmented reality research: A review of the 2nd decade of ISMAR (2008\u20132017). https://ieeexplore.ieee.org/abstract/document/8456568/",
+          "Kocabalil, A., et al. (2018). Measuring user experience in conversational interfaces: a comparison of six questionnaires. https://www.scienceopen.com/hosted-document?doi=10.14236/ewic/HCI2018.21",
+          "Lacoche, J., et al. (2022). Evaluating usability and user experience of AR applications in VR simulation. https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.881318/full",
+          "Li, Z., et al. (2024). Ethical considerations in the use of AI for higher education: A comprehensive guide. https://ieeexplore.ieee.org/abstract/document/10475661/",
+          "Liao, Q., & Varshney, K. (2021). Human-centered explainable ai (xai): From algorithms to user experiences. https://arxiv.org/abs/2110.10790",
+          "Liao, Q., et al. (2020). Questioning the AI: informing design practices for explainable AI user experiences. https://dl.acm.org/doi/abs/10.1145/3313831.3376590",
+          "Lim, T., et al. (2023). Ethical considerations for artificial intelligence in educational assessments. https://www.igi-global.com/chapter/ethical-considerations-for-artificial-intelligence-in-educational-assessments/330829",
+          "Lu, G., et al. (2025). Understanding user experience for mobile applications: a systematic literature review. https://link.springer.com/article/10.1007/s42452-025-07170-3",
+          "Mohseni, S., et al. (2021). A multidisciplinary survey and framework for design and evaluation of explainable AI systems. https://dl.acm.org/doi/abs/10.1145/3387166",
+          "Mu\u00f1oz, L. (2020). Augmented and virtual reality evolution and future tendency. https://www.mdpi.com/2076-3417/10/1/322",
+          "Naseeb, J., & Bhatti, N. (2024). Ethical Considerations of AI in Educational Curriculum. https://www.researchcorridor.org/index.php/MJENC/article/view/14",
+          "Nikou, S., & Economides, A. (2019). A comparative study between a computer-based and a mobile-based assessment: Usability and user experience. https://www.emerald.com/insight/content/doi/10.1108/itse-01-2019-0003/full/html",
+          "Nourani, M., et al. (2022). On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications. https://dl.acm.org/doi/abs/10.1145/3531066",
+          "Phillips, P., et al. (2021). Four principles of explainable artificial intelligence. https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+          "Reiss, M. (2021). The Use of Al in Education: Practicalities and Ethical Considerations.. https://eric.ed.gov/?id=EJ1297682",
+          "Remian, D. (2019). Augmenting education: ethical considerations for incorporating artificial intelligence in education. https://scholarworks.umb.edu/instruction_capstone/52/",
+          "Wang, D., et al. (2019). Designing theory-driven user-centric explainable AI. https://dl.acm.org/doi/abs/10.1145/3290605.3300831",
+          "Weichbroth, P. (2020). Usability of mobile applications: a systematic literature study. https://ieeexplore.ieee.org/abstract/document/9042272/",
+          "Yang, S., et al. (2018). User Experience of Mobile Application's Interface: Measurement Development. https://dl.acm.org/doi/abs/10.1145/3227696.3227698",
+          "Zaman, B. I. (2024). Transforming education through AI benefits risks and ethical considerations. https://www.preprints.org/frontend/manuscript/f902e6b0cd358e7f3c2a35d801628df7/download_pub",
+          "Zhu, J., et al. (2018). Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation. https://ieeexplore.ieee.org/abstract/document/8490433/"
+        ],
+        "papers": [
+          {
+            "paper_id": "GsuJGst5tC0J",
+            "title": "User Experience of Mobile Application's Interface: Measurement Development",
+            "authors": [
+              {
+                "name": "SC Yang"
+              },
+              {
+                "name": "TL Lee"
+              },
+              {
+                "name": "TT Feng"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 mobile application interface, to develop a scale which can be employed to measure user experience of mobile application\u2019s interface. \u2026 the difference between PCs and mobile devices \u2026",
+            "citation_count": 17,
+            "url": "https://dl.acm.org/doi/abs/10.1145/3227696.3227698",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "80BsxINfVB8J",
+            "title": "A comparative study between a computer-based and a mobile-based assessment: Usability and user experience",
+            "authors": [
+              {
+                "name": "SA Nikou"
+              },
+              {
+                "name": "AA Economides"
+              }
+            ],
+            "year": 2019,
+            "abstract": "\u2026 The purpose of this study is to compare the overall usability and user experience of desktop computers and mobile-devices when used in a summative assessment in the context of a \u2026",
+            "citation_count": 41,
+            "url": "https://www.emerald.com/insight/content/doi/10.1108/itse-01-2019-0003/full/html",
+            "venue": "",
+            "pdf_url": "https://pureportal.strath.ac.uk/files/89707690/Nikou_Economides_ITSE_2019_A_comparative_study_between_a_computer_based_and_a_mobile_based.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "lI6S3XebsvAJ",
+            "title": "Comparing user experience: an analysis of usability testing methods for mobile applications",
+            "authors": [
+              {
+                "name": "M Abbasi"
+              },
+              {
+                "name": "G Sarmento"
+              },
+              {
+                "name": "M Mota\u2026"
+              }
+            ],
+            "year": 2023,
+            "abstract": "\u2026 users interact with, making usability and user satisfaction crucial for their success. This paper aims to compare two usability testing methods, user \u2026 with various applications. The goal is \u2026",
+            "citation_count": 9,
+            "url": "https://ieeexplore.ieee.org/abstract/document/10211987/",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "QXaHYAAiAQIJ",
+            "title": "Automated User Experience (UX) Testing for Mobile Application: Strengths and Limitations.",
+            "authors": [
+              {
+                "name": "HY Abuaddous"
+              },
+              {
+                "name": "AM Saleh"
+              },
+              {
+                "name": "O Enaizan\u2026"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 UX evaluation and to highlight the UX measurements that \u2026 used automated UX evaluation tools for mobile applications. \u2026 ing of mobile applications: A comparison between laboratory \u2026",
+            "citation_count": 33,
+            "url": "https://www.researchgate.net/profile/Hayfa-Abu-Addous/publication/358920763_Automated_User_Experience_UX_Testing_for_Mobile_Application_Strengths_and_Limitations/links/6222371584ce8e5b4d05a7c6/Automated-User-Experience-UX-Testing-for-Mobile-Application-Strengths-and-Limitations.pdf",
+            "venue": "",
+            "pdf_url": "https://www.researchgate.net/profile/Hayfa-Abu-Addous/publication/358920763_Automated_User_Experience_UX_Testing_for_Mobile_Application_Strengths_and_Limitations/links/6222371584ce8e5b4d05a7c6/Automated-User-Experience-UX-Testing-for-Mobile-Application-Strengths-and-Limitations.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "AzWpoJgjYeYJ",
+            "title": "Why people choose Apps: An evaluation of the ecology and user experience of mobile applications",
+            "authors": [
+              {
+                "name": "O Al"
+              }
+            ],
+            "year": 2023,
+            "abstract": "\u2026 overall user experience and App acceptance. Interview data indicate that user's choice of downloading and abandoning applications \u2026 made without systematic comparison of products. \u2026",
+            "citation_count": 97,
+            "url": "https://www.sciencedirect.com/science/article/pii/S1071581922001835",
+            "venue": "",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1071581922001835",
+            "type": "paper"
+          },
+          {
+            "paper_id": "eD3XBj6lun4J",
+            "title": "An Experimental Study on Usability and User Experience Evaluation Techniques in Mobile Applications.",
+            "authors": [
+              {
+                "name": "EA Jesus"
+              },
+              {
+                "name": "GC Guerino"
+              },
+              {
+                "name": "PHD Valle"
+              },
+              {
+                "name": "WT Nakamura\u2026"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 evaluation techniques to improve the quality of applications. \u2026 , to use more than one technique to evaluate an application in \u2026 compare the efficiency, effectiveness, and acceptance of two \u2026",
+            "citation_count": 6,
+            "url": "https://www.scitepress.org/PublishedPapers/2022/110830/110830.pdf",
+            "venue": "",
+            "pdf_url": "https://www.scitepress.org/PublishedPapers/2022/110830/110830.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "1rl8n3bapwQJ",
+            "title": "Understanding user experience for mobile applications: a systematic literature review",
+            "authors": [
+              {
+                "name": "G Lu"
+              },
+              {
+                "name": "S Qu"
+              },
+              {
+                "name": "Y Chen"
+              }
+            ],
+            "year": 2025,
+            "abstract": "\u2026 users\u2019 expectations in mobile application development. However, the existing literature on mobile application user experience \u2026 , such as user acceptance, usability, user requirements, \u2026",
+            "citation_count": 6,
+            "url": "https://link.springer.com/article/10.1007/s42452-025-07170-3",
+            "venue": "",
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s42452-025-07170-3.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "fR4vYrgObs0J",
+            "title": "Evaluation of user experience in augmented reality mobile applications",
+            "authors": [
+              {
+                "name": "V Davidavi\u010dien\u0117"
+              },
+              {
+                "name": "J Raudeli\u016bnien\u0117\u2026"
+              }
+            ],
+            "year": 2021,
+            "abstract": "\u2026 of a mobile augmented reality application evaluation, investigation cases of two mobile applications and their user experience, \u2026 of the evaluated product, propose to compare the results \u2026",
+            "citation_count": 71,
+            "url": "https://journals.vilniustech.lt/index.php/JBEM/article/view/13999",
+            "venue": "",
+            "pdf_url": "https://journals.vilniustech.lt/index.php/JBEM/article/download/13999/10290",
+            "type": "paper"
+          },
+          {
+            "paper_id": "FWBxDleawjMJ",
+            "title": "Usability of mobile applications: a systematic literature study",
+            "authors": [
+              {
+                "name": "P Weichbroth"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 and surveys are two major research methods applied, while \u2026 user experience dimensions, covering not only application \u2026 the difference between the context of mobile applications and \u2026",
+            "citation_count": 417,
+            "url": "https://ieeexplore.ieee.org/abstract/document/9042272/",
+            "venue": "",
+            "pdf_url": "https://ieeexplore.ieee.org/iel7/6287639/8948470/09042272.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "1Xe7xptNOdUJ",
+            "title": "Measuring user experience in conversational interfaces: a comparison of six questionnaires",
+            "authors": [
+              {
+                "name": "AB Kocabalil"
+              },
+              {
+                "name": "L Laranjo"
+              },
+              {
+                "name": "E Coiera"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 Many variations of the SUS have replaced the term \u2017system\u2018 in the original statements with the terms \u2017website\u2018 or \u2017mobile app\u2018 to make them suitable for their own application domain. \u2026",
+            "citation_count": 97,
+            "url": "https://www.scienceopen.com/hosted-document?doi=10.14236/ewic/HCI2018.21",
+            "venue": "",
+            "pdf_url": "https://www.scienceopen.com/document_file/24d11410-aa32-4601-b8f5-0e781135d61a/ScienceOpen/BHCI-2018_Kocaballi%20A.pdf",
+            "type": "paper"
+          }
+        ],
+        "agent_traces": [
+          {
+            "agent": "SafetyManager",
+            "action": "Input passed safety check",
+            "timestamp": "2025-12-02T16:34:57.157655"
+          },
+          {
+            "agent": "Planner",
+            "action": "Created search strategy",
+            "details": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD)...",
+            "timestamp": "2025-12-02T16:34:57.195848",
+            "duration_seconds": 0.037775
+          },
+          {
+            "agent": "Researcher",
+            "action": "\ud83c\udf10 Used Tavily Web Search - Found 5 supplementary sources",
+            "details": "Tavily search for: 'Compare different approaches to measuring user experience in mobile applications'",
+            "timestamp": "2025-12-02T16:35:01.857393",
+            "tool": "tavily",
+            "duration_seconds": 0.5
+          },
+          {
+            "agent": "Researcher",
+            "action": "Found 10 relevant papers",
+            "details": "Papers from 2018 to 2025",
+            "timestamp": "2025-12-02T16:35:01.857444",
+            "duration_seconds": 4.661216
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 10 papers",
+            "timestamp": "2025-12-02T16:35:01.965428",
+            "duration_seconds": 0.106921
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 415 characters, 36 citations",
+            "timestamp": "2025-12-02T16:35:02.050030",
+            "duration_seconds": 0.083598
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 1)",
+            "timestamp": "2025-12-02T16:35:02.051005"
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 10 papers",
+            "timestamp": "2025-12-02T16:35:02.129485",
+            "duration_seconds": 0.077859
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 415 characters, 36 citations",
+            "timestamp": "2025-12-02T16:35:02.166839",
+            "duration_seconds": 0.036963
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 2)",
+            "timestamp": "2025-12-02T16:35:02.167103"
+          },
+          {
+            "agent": "SafetyManager",
+            "action": "Output passed safety check",
+            "timestamp": "2025-12-02T16:35:02.168834"
+          },
+          {
+            "agent": "Judge",
+            "action": "Evaluated output quality - Score: 5.0/10",
+            "details": "Criteria evaluated: relevance_coverage, evidence_quality, comparative_analysis, factual_accuracy, safety_compliance, clarity_organization",
+            "timestamp": "2025-12-02T16:35:02.490138",
+            "duration_seconds": 0.321054,
+            "evaluation": {
+              "query": "Compare different approaches to measuring user experience in mobile applications",
+              "criteria_scores": {
+                "relevance_coverage": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Coverage of relevant papers and appropriateness of scope"
+                },
+                "evidence_quality": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Quality and authority of sources, proper citations"
+                },
+                "comparative_analysis": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+                },
+                "factual_accuracy": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Correctness of paper details, no hallucinated references"
+                },
+                "safety_compliance": {
+                  "score": 5.0,
+                  "weight": 0.1,
+                  "weighted_score": 0.5,
+                  "description": "No prohibited content, appropriate academic tone"
+                },
+                "clarity_organization": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Logical structure, clear writing, smooth transitions"
+                }
+              },
+              "overall_score": 5.0,
+              "feedback": {
+                "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 416. Please try again in 5m47.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 741. Please try again in 10m28.128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 408. Please try again in 5m40.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 417. Please try again in 5m48.191999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 397. Please try again in 5m30.912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 410. Please try again in 5m42.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+              }
+            }
+          }
+        ],
+        "safety_events": [],
+        "metadata": {
+          "query": "Compare different approaches to measuring user experience in mobile applications",
+          "num_papers": 10,
+          "num_citations": 36,
+          "num_revisions": 2,
+          "input_safe": true,
+          "output_safe": true,
+          "duration_seconds": 5.335699,
+          "timestamp": "2025-12-02T16:34:57.154708",
+          "success": true
+        }
+      },
+      "evaluation": {
+        "query": "Compare different approaches to measuring user experience in mobile applications",
+        "criteria_scores": {
+          "relevance_coverage": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Coverage of relevant papers and appropriateness of scope"
+          },
+          "evidence_quality": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Quality and authority of sources, proper citations"
+          },
+          "comparative_analysis": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+          },
+          "factual_accuracy": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Correctness of paper details, no hallucinated references"
+          },
+          "safety_compliance": {
+            "score": 5.0,
+            "weight": 0.1,
+            "weighted_score": 0.5,
+            "description": "No prohibited content, appropriate academic tone"
+          },
+          "clarity_organization": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Logical structure, clear writing, smooth transitions"
+          }
+        },
+        "overall_score": 5.0,
+        "feedback": {
+          "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 416. Please try again in 5m47.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99985, Requested 741. Please try again in 10m27.264s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99985, Requested 408. Please try again in 5m39.552s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99985, Requested 417. Please try again in 5m47.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99985, Requested 397. Please try again in 5m30.048s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99985, Requested 410. Please try again in 5m41.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "query": "What are the latest developments in conversational AI for healthcare?",
+      "system_output": {
+        "response": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99980, Requested 707. Please try again in 9m53.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "bibliography": [
+          "Abbasi, M., et al. (2023). Comparing user experience: an analysis of usability testing methods for mobile applications. https://ieeexplore.ieee.org/abstract/document/10211987/",
+          "Abuaddous, H., et al. (2022). Automated User Experience (UX) Testing for Mobile Application: Strengths and Limitations.. https://www.researchgate.net/profile/Hayfa-Abu-Addous/publication/358920763_Automated_User_Experience_UX_Testing_for_Mobile_Application_Strengths_and_Limitations/links/6222371584ce8e5b4d05a7c6/Automated-User-Experience-UX-Testing-for-Mobile-Application-Strengths-and-Limitations.pdf",
+          "Akgun, S., & Greenhow, C. (2022). Artificial intelligence in education: Addressing ethical challenges in K-12 settings. https://link.springer.com/article/10.1007/s43681-021-00096-7",
+          "Al, O. (2023). Why people choose Apps: An evaluation of the ecology and user experience of mobile applications. https://www.sciencedirect.com/science/article/pii/S1071581922001835",
+          "Bozzelli, G., et al. (2019). An integrated VR/AR framework for user-centric interactive experience of cultural heritage: The ArkaeVision project. https://www.sciencedirect.com/science/article/pii/S2212054819300232",
+          "Car, L. T., et al. (2020). Conversational agents in health care: scoping review and conceptual analysis. https://www.jmir.org/2020/8/e17158/",
+          "Cipresso, P., et al. (2018). The past, present, and future of virtual and augmented reality research: a network and cluster analysis of the literature. https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02086/full",
+          "Davidavi\u010dien\u0117, V., & Raudeli\u016bnien\u0117\u2026, J. (2021). Evaluation of user experience in augmented reality mobile applications. https://journals.vilniustech.lt/index.php/JBEM/article/view/13999",
+          "Derby, J., & Chaparro, B. (2021). The challenges of evaluating the usability of augmented reality (AR). https://journals.sagepub.com/doi/abs/10.1177/1071181321651315",
+          "Dey, A., et al. (2018). A systematic review of 10 years of augmented reality usability studies: 2005 to 2014. https://www.frontiersin.org/articles/10.3389/frobt.2018.00037/full",
+          "Dhanorkar, S., et al. (2021). Who needs to know what, when?: Broadening the Explainable AI (XAI) Design Space by Looking at Explanations Across the AI Lifecycle. https://dl.acm.org/doi/abs/10.1145/3461778.3462131",
+          "Eden, C., et al. (2024). Integrating AI in education: Opportunities, challenges, and ethical considerations. https://www.researchgate.net/profile/Nneamaka-Onyebuchi-4/publication/379428577_Integrating_AI_in_education_Opportunities_challenges_and_ethical_considerations/links/67e2c626fe0f5a760f90195a/Integrating-AI-in-education-Opportunities-challenges-and-ethical-considerations.pdf",
+          "Ferreira, J., & Monteiro, M. (2020). What are people doing about XAI user experience? A survey on AI explainability research and practice. https://link.springer.com/chapter/10.1007/978-3-030-49760-6_4",
+          "Garz\u00f3n, J. (2021). An overview of twenty-five years of augmented reality in education. https://www.mdpi.com/2414-4088/5/7/37",
+          "Gupta, J., et al. (2022). Conversational artificial intelligence in healthcare. https://link.springer.com/chapter/10.1007/978-981-16-7996-4_32",
+          "Javaid, M., et al. (2023). ChatGPT for healthcare services: An emerging stage for an innovative perspective.. https://www.researchgate.net/profile/Mohd-Javaid/publication/370168248_ChatGPT_for_healthcare_services_An_emerging_stage_for_an_innovative_perspective/links/644c08a5809a5350213659c1/ChatGPT-for-healthcare-services-An-emerging-stage-for-an-innovative-perspective.pdf?origin=journalDetail&_tp=eyJwYWdlIjoiam91cm5hbERldGFpbCJ9",
+          "Jesus, E., et al. (2022). An Experimental Study on Usability and User Experience Evaluation Techniques in Mobile Applications.. https://www.scitepress.org/PublishedPapers/2022/110830/110830.pdf",
+          "Kerr, K. (2020). Ethical considerations when using artificial intelligence-based assistive technologies in education. https://openeducationalberta.ca/educationaltechnologyethics/chapter/ethical-considerations-when-using-artificial-intelligence-based-assistive-technologies-in-education/",
+          "Kim, K., et al. (2018). Revisiting trends in augmented reality research: A review of the 2nd decade of ISMAR (2008\u20132017). https://ieeexplore.ieee.org/abstract/document/8456568/",
+          "Kocabalil, A., et al. (2018). Measuring user experience in conversational interfaces: a comparison of six questionnaires. https://www.scienceopen.com/hosted-document?doi=10.14236/ewic/HCI2018.21",
+          "Kulkarni, P., & Mahabaleshwarkar\u2026, A. (2019). Conversational AI: An overview of methodologies, applications & future scope. https://ieeexplore.ieee.org/abstract/document/9129347/",
+          "Lacoche, J., et al. (2022). Evaluating usability and user experience of AR applications in VR simulation. https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.881318/full",
+          "Lal, M., & Neduncheliyan, S. (2024). Conversational artificial intelligence development in healthcare. https://link.springer.com/article/10.1007/s11042-024-18841-5",
+          "Laranjo, L., et al. (2018). Conversational agents in healthcare: a systematic review. https://academic.oup.com/jamia/article-abstract/25/9/1248/5052181",
+          "Li, Z., et al. (2024). Ethical considerations in the use of AI for higher education: A comprehensive guide. https://ieeexplore.ieee.org/abstract/document/10475661/",
+          "Liao, Q., & Varshney, K. (2021). Human-centered explainable ai (xai): From algorithms to user experiences. https://arxiv.org/abs/2110.10790",
+          "Liao, Q., et al. (2020). Questioning the AI: informing design practices for explainable AI user experiences. https://dl.acm.org/doi/abs/10.1145/3313831.3376590",
+          "Lim, T., et al. (2023). Ethical considerations for artificial intelligence in educational assessments. https://www.igi-global.com/chapter/ethical-considerations-for-artificial-intelligence-in-educational-assessments/330829",
+          "Lu, G., et al. (2025). Understanding user experience for mobile applications: a systematic literature review. https://link.springer.com/article/10.1007/s42452-025-07170-3",
+          "McTear, M. (2022). Conversational ai: Dialogue systems, conversational agents, and chatbots. https://books.google.com/books?hl=en&lr=&id=C4lyEAAAQBAJ&oi=fnd&pg=PR1&dq=What+are+the+latest+developments+in+conversational+AI+for+healthcare%3F&ots=ajWROgLBwC&sig=KHl8RWyqmUNKx-jtSEs_a0O2n9Y",
+          "Milne, M. (2020). The effectiveness of artificial intelligence conversational agents in health care: systematic review. https://www.jmir.org/2020/10/e20346/https://doi.org/10.2196/20346",
+          "Mohseni, S., et al. (2021). A multidisciplinary survey and framework for design and evaluation of explainable AI systems. https://dl.acm.org/doi/abs/10.1145/3387166",
+          "Mu\u00f1oz, L. (2020). Augmented and virtual reality evolution and future tendency. https://www.mdpi.com/2076-3417/10/1/322",
+          "Naseeb, J., & Bhatti, N. (2024). Ethical Considerations of AI in Educational Curriculum. https://www.researchcorridor.org/index.php/MJENC/article/view/14",
+          "Nikou, S., & Economides, A. (2019). A comparative study between a computer-based and a mobile-based assessment: Usability and user experience. https://www.emerald.com/insight/content/doi/10.1108/itse-01-2019-0003/full/html",
+          "Nourani, M., et al. (2022). On the importance of user backgrounds and impressions: Lessons learned from interactive AI applications. https://dl.acm.org/doi/abs/10.1145/3531066",
+          "Phillips, P., et al. (2021). Four principles of explainable artificial intelligence. https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf?utm_source=chatgpt.com",
+          "Reiss, M. (2021). The Use of Al in Education: Practicalities and Ethical Considerations.. https://eric.ed.gov/?id=EJ1297682",
+          "Remian, D. (2019). Augmenting education: ethical considerations for incorporating artificial intelligence in education. https://scholarworks.umb.edu/instruction_capstone/52/",
+          "Sawad, A. B., et al. (2022). A systematic review on healthcare artificial intelligent conversational agents for chronic conditions. https://www.mdpi.com/1424-8220/22/7/2625",
+          "Wang, D., et al. (2019). Designing theory-driven user-centric explainable AI. https://dl.acm.org/doi/abs/10.1145/3290605.3300831",
+          "Weichbroth, P. (2020). Usability of mobile applications: a systematic literature study. https://ieeexplore.ieee.org/abstract/document/9042272/",
+          "Yang, S., et al. (2018). User Experience of Mobile Application's Interface: Measurement Development. https://dl.acm.org/doi/abs/10.1145/3227696.3227698",
+          "Zaman, B. I. (2024). Transforming education through AI benefits risks and ethical considerations. https://www.preprints.org/frontend/manuscript/f902e6b0cd358e7f3c2a35d801628df7/download_pub",
+          "Zhu, J., et al. (2018). Explainable AI for designers: A human-centered perspective on mixed-initiative co-creation. https://ieeexplore.ieee.org/abstract/document/8490433/"
+        ],
+        "papers": [
+          {
+            "paper_id": "Zq9ZRMbc49sJ",
+            "title": "Conversational artificial intelligence development in healthcare",
+            "authors": [
+              {
+                "name": "M Lal"
+              },
+              {
+                "name": "S Neduncheliyan"
+              }
+            ],
+            "year": 2024,
+            "abstract": "\u2026 This abstract presents an overview of the development process for Conversational AI in healthcare, focusing on utilizing Recurrent Neural Networks (RNNs). RNNs are well-suited for \u2026",
+            "citation_count": 5,
+            "url": "https://link.springer.com/article/10.1007/s11042-024-18841-5",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "C7Nt1YF6Re8J",
+            "title": "Conversational artificial intelligence in healthcare",
+            "authors": [
+              {
+                "name": "J Gupta"
+              },
+              {
+                "name": "N Raychaudhuri"
+              },
+              {
+                "name": "M Lee"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 in conversational AI. This paper intends to present an architecture adopted to deploy a successful conversational AI agent, \u2026 used in the development of conversational AI are discussed. \u2026",
+            "citation_count": 8,
+            "url": "https://link.springer.com/chapter/10.1007/978-981-16-7996-4_32",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "NFy6jelXyjEJ",
+            "title": "Conversational AI: An overview of methodologies, applications & future scope",
+            "authors": [
+              {
+                "name": "P Kulkarni"
+              },
+              {
+                "name": "A Mahabaleshwarkar\u2026"
+              }
+            ],
+            "year": 2019,
+            "abstract": "\u2026 development and \u2026 , Conversational AI applications in fields like healthcare, education and tourism can be developed further by combining Conversational AI with other subdomains of AI \u2026",
+            "citation_count": 127,
+            "url": "https://ieeexplore.ieee.org/abstract/document/9129347/",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          },
+          {
+            "paper_id": "rn5TvV5KtfsJ",
+            "title": "A systematic review on healthcare artificial intelligent conversational agents for chronic conditions",
+            "authors": [
+              {
+                "name": "A Bin Sawad"
+              },
+              {
+                "name": "B Narayan"
+              },
+              {
+                "name": "A Alnefaie"
+              },
+              {
+                "name": "A Maqbool\u2026"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 of conversational agents used in health care for chronic conditions, examining their underlying communication technology, evaluation measures, and AI \u2026 a list of AI CAs in healthcare for \u2026",
+            "citation_count": 101,
+            "url": "https://www.mdpi.com/1424-8220/22/7/2625",
+            "venue": "",
+            "pdf_url": "https://www.mdpi.com/1424-8220/22/7/2625",
+            "type": "paper"
+          },
+          {
+            "paper_id": "sthskkQb4TAJ",
+            "title": "The effectiveness of artificial intelligence conversational agents in health care: systematic review",
+            "authors": [
+              {
+                "name": "M Milne"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 aided the development of more advanced AI agents. Many different types of \u2026 conversational agents designed for health care purposes. Studies that evaluated at least 1 conversational \u2026",
+            "citation_count": 545,
+            "url": "https://www.jmir.org/2020/10/e20346/https://doi.org/10.2196/20346",
+            "venue": "",
+            "pdf_url": "https://www.jmir.org/2020/10/e20346/https://doi.org/10.2196/20346",
+            "type": "paper"
+          },
+          {
+            "paper_id": "2kDFgCXjFlUJ",
+            "title": "Conversational agents in health care: scoping review and conceptual analysis",
+            "authors": [
+              {
+                "name": "L Tudor Car"
+              },
+              {
+                "name": "DA Dhinagaran"
+              },
+              {
+                "name": "BM Kyaw\u2026"
+              }
+            ],
+            "year": 2020,
+            "abstract": "\u2026 with the search terms \u201cconversational agents,\u201d \u201cconversational AI,\u201d \u201c\u2026 on a conversational agent implemented for a health care\u2013\u2026 conversational agent development, articles that mentioned \u2026",
+            "citation_count": 566,
+            "url": "https://www.jmir.org/2020/8/e17158/",
+            "venue": "",
+            "pdf_url": "https://www.jmir.org/2020/8/e17158/",
+            "type": "paper"
+          },
+          {
+            "paper_id": "i5DxK0JqWO4J",
+            "title": "ChatGPT for healthcare services: An emerging stage for an innovative perspective.",
+            "authors": [
+              {
+                "name": "M Javaid"
+              },
+              {
+                "name": "A Haleema"
+              },
+              {
+                "name": "RP Singh"
+              }
+            ],
+            "year": 2023,
+            "abstract": "\u2026 This technology has lots of applications in healthcare. The need for accurate and current \u2026 Its effectiveness as a conversational AI tool makes it useful for chatbots, virtual assistants, and \u2026",
+            "citation_count": 544,
+            "url": "https://www.researchgate.net/profile/Mohd-Javaid/publication/370168248_ChatGPT_for_healthcare_services_An_emerging_stage_for_an_innovative_perspective/links/644c08a5809a5350213659c1/ChatGPT-for-healthcare-services-An-emerging-stage-for-an-innovative-perspective.pdf?origin=journalDetail&_tp=eyJwYWdlIjoiam91cm5hbERldGFpbCJ9",
+            "venue": "",
+            "pdf_url": "https://www.researchgate.net/profile/Mohd-Javaid/publication/370168248_ChatGPT_for_healthcare_services_An_emerging_stage_for_an_innovative_perspective/links/644c08a5809a5350213659c1/ChatGPT-for-healthcare-services-An-emerging-stage-for-an-innovative-perspective.pdf?origin=journalDetail&_tp=eyJwYWdlIjoiam91cm5hbERldGFpbCJ9",
+            "type": "paper"
+          },
+          {
+            "paper_id": "2pQN3JaKc_EJ",
+            "title": "Conversational agents in healthcare: a systematic review",
+            "authors": [
+              {
+                "name": "L Laranjo"
+              },
+              {
+                "name": "AG Dunn"
+              },
+              {
+                "name": "HL Tong\u2026"
+              }
+            ],
+            "year": 2018,
+            "abstract": "\u2026 role in health and medical care, \u2026 technology in healthcare has been undertaken. In order to address this gap, our aim was to systematically identify and review studies of conversational \u2026",
+            "citation_count": 1507,
+            "url": "https://academic.oup.com/jamia/article-abstract/25/9/1248/5052181",
+            "venue": "",
+            "pdf_url": "https://academic.oup.com/jamia/article-pdf/25/9/1248/34150600/ocy072.pdf",
+            "type": "paper"
+          },
+          {
+            "paper_id": "kH9ra3UVl2UJ",
+            "title": "Conversational ai: Dialogue systems, conversational agents, and chatbots",
+            "authors": [
+              {
+                "name": "M McTear"
+              }
+            ],
+            "year": 2022,
+            "abstract": "\u2026 Conversational AI. While the idea of interacting with a computer using voice or text goes back a long way, it is only in recent \u2026 Advances in AI, particularly in deep learning, along with the \u2026",
+            "citation_count": 373,
+            "url": "https://books.google.com/books?hl=en&lr=&id=C4lyEAAAQBAJ&oi=fnd&pg=PR1&dq=What+are+the+latest+developments+in+conversational+AI+for+healthcare%3F&ots=ajWROgLBwC&sig=KHl8RWyqmUNKx-jtSEs_a0O2n9Y",
+            "venue": "",
+            "pdf_url": null,
+            "type": "paper"
+          }
+        ],
+        "agent_traces": [
+          {
+            "agent": "SafetyManager",
+            "action": "Input passed safety check",
+            "timestamp": "2025-12-02T16:35:02.749314"
+          },
+          {
+            "agent": "Planner",
+            "action": "Created search strategy",
+            "details": "Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD)...",
+            "timestamp": "2025-12-02T16:35:02.818061",
+            "duration_seconds": 0.068457
+          },
+          {
+            "agent": "Researcher",
+            "action": "\ud83c\udf10 Used Tavily Web Search - Found 5 supplementary sources",
+            "details": "Tavily search for: 'What are the latest developments in conversational AI for healthcare?'",
+            "timestamp": "2025-12-02T16:35:07.495333",
+            "tool": "tavily",
+            "duration_seconds": 0.5
+          },
+          {
+            "agent": "Researcher",
+            "action": "Found 9 relevant papers",
+            "details": "Papers from 2018 to 2024",
+            "timestamp": "2025-12-02T16:35:07.495357",
+            "duration_seconds": 4.676893
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 9 papers",
+            "timestamp": "2025-12-02T16:35:07.594420",
+            "duration_seconds": 0.098488
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 414 characters, 45 citations",
+            "timestamp": "2025-12-02T16:35:07.684939",
+            "duration_seconds": 0.089935
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 1)",
+            "timestamp": "2025-12-02T16:35:07.685460"
+          },
+          {
+            "agent": "Analyzer",
+            "action": "Analyzed papers and identified patterns",
+            "details": "Analyzed 9 papers",
+            "timestamp": "2025-12-02T16:35:07.735244",
+            "duration_seconds": 0.04933
+          },
+          {
+            "agent": "Writer",
+            "action": "Drafted literature review",
+            "details": "Review length: 414 characters, 45 citations",
+            "timestamp": "2025-12-02T16:35:07.781818",
+            "duration_seconds": 0.04633
+          },
+          {
+            "agent": "QualityCheck",
+            "action": "Draft too short, needs revision (attempt 2)",
+            "timestamp": "2025-12-02T16:35:07.782042"
+          },
+          {
+            "agent": "SafetyManager",
+            "action": "Output passed safety check",
+            "timestamp": "2025-12-02T16:35:07.783514"
+          },
+          {
+            "agent": "Judge",
+            "action": "Evaluated output quality - Score: 5.0/10",
+            "details": "Criteria evaluated: relevance_coverage, evidence_quality, comparative_analysis, factual_accuracy, safety_compliance, clarity_organization",
+            "timestamp": "2025-12-02T16:35:08.059831",
+            "duration_seconds": 0.27613,
+            "evaluation": {
+              "query": "What are the latest developments in conversational AI for healthcare?",
+              "criteria_scores": {
+                "relevance_coverage": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Coverage of relevant papers and appropriateness of scope"
+                },
+                "evidence_quality": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Quality and authority of sources, proper citations"
+                },
+                "comparative_analysis": {
+                  "score": 5.0,
+                  "weight": 0.2,
+                  "weighted_score": 1.0,
+                  "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+                },
+                "factual_accuracy": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Correctness of paper details, no hallucinated references"
+                },
+                "safety_compliance": {
+                  "score": 5.0,
+                  "weight": 0.1,
+                  "weighted_score": 0.5,
+                  "description": "No prohibited content, appropriate academic tone"
+                },
+                "clarity_organization": {
+                  "score": 5.0,
+                  "weight": 0.15,
+                  "weighted_score": 0.75,
+                  "description": "Logical structure, clear writing, smooth transitions"
+                }
+              },
+              "overall_score": 5.0,
+              "feedback": {
+                "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 417. Please try again in 5m42.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 742. Please try again in 10m22.944s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 409. Please try again in 5m35.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 418. Please try again in 5m43.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 398. Please try again in 5m25.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+                "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 411. Please try again in 5m36.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+              }
+            }
+          }
+        ],
+        "safety_events": [],
+        "metadata": {
+          "query": "What are the latest developments in conversational AI for healthcare?",
+          "num_papers": 9,
+          "num_citations": 45,
+          "num_revisions": 2,
+          "input_safe": true,
+          "output_safe": true,
+          "duration_seconds": 5.312829,
+          "timestamp": "2025-12-02T16:35:02.747191",
+          "success": true
+        }
+      },
+      "evaluation": {
+        "query": "What are the latest developments in conversational AI for healthcare?",
+        "criteria_scores": {
+          "relevance_coverage": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Coverage of relevant papers and appropriateness of scope"
+          },
+          "evidence_quality": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Quality and authority of sources, proper citations"
+          },
+          "comparative_analysis": {
+            "score": 5.0,
+            "weight": 0.2,
+            "weighted_score": 1.0,
+            "description": "Identification of patterns, comparison of approaches, state-of-the-art discussion"
+          },
+          "factual_accuracy": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Correctness of paper details, no hallucinated references"
+          },
+          "safety_compliance": {
+            "score": 5.0,
+            "weight": 0.1,
+            "weighted_score": 0.5,
+            "description": "No prohibited content, appropriate academic tone"
+          },
+          "clarity_organization": {
+            "score": 5.0,
+            "weight": 0.15,
+            "weighted_score": 0.75,
+            "description": "Logical structure, clear writing, smooth transitions"
+          }
+        },
+        "overall_score": 5.0,
+        "feedback": {
+          "relevance_coverage": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 417. Please try again in 5m42.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "evidence_quality": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 742. Please try again in 10m22.944s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "comparative_analysis": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 409. Please try again in 5m35.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "factual_accuracy": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 418. Please try again in 5m43.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "safety_compliance": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 398. Please try again in 5m25.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "clarity_organization": "Error during evaluation: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01k6vjc0npfpraq2svjrjcq2zj` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99978, Requested 411. Please try again in 5m36.096s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    }
+  ],
+  "aggregate_scores": {
+    "relevance_coverage": {
+      "mean": 5.6,
+      "min": 5.0,
+      "max": 8.0,
+      "scores": [
+        8.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    "evidence_quality": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "scores": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    "comparative_analysis": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "scores": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    "factual_accuracy": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "scores": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    "safety_compliance": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "scores": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    "clarity_organization": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "scores": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    "overall": {
+      "mean": 5.12,
+      "min": 5.0,
+      "max": 5.6,
+      "scores": [
+        5.6,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    }
+  }
+}

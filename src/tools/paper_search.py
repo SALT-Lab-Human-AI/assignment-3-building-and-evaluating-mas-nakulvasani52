@@ -22,21 +22,27 @@ class PaperSearchTool:
     API key is optional but recommended for higher rate limits.
     """
 
-    def __init__(self, max_results: int = 10):
+    def __init__(self, max_results: int = 10, provider: str = "semantic_scholar"):
         """
         Initialize paper search tool.
 
         Args:
             max_results: Maximum number of papers to return
+            provider: Search provider ("semantic_scholar" or "serpapi")
         """
         self.max_results = max_results
+        self.provider = provider
         self.logger = logging.getLogger("tools.paper_search")
 
-        # API key is optional for Semantic Scholar
-        self.api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY")
+        # API keys
+        self.semantic_scholar_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY")
+        self.serpapi_key = os.getenv("SERPAPI_API_KEY")
         
-        if not self.api_key:
+        if not self.semantic_scholar_key and provider == "semantic_scholar":
             self.logger.info("No Semantic Scholar API key found. Using anonymous access (lower rate limits)")
+            
+        if not self.serpapi_key and provider == "serpapi":
+            self.logger.warning("No SerpAPI key found. Search will fail.")
 
     async def search(
         self,
@@ -58,26 +64,29 @@ class PaperSearchTool:
                 - fields: List of fields to retrieve
 
         Returns:
-            List of papers with metadata format:
-            {
-                "paper_id": str,
-                "title": str,
-                "authors": List[{"name": str}],
-                "year": int,
-                "abstract": str,
-                "citation_count": int,
-                "url": str,
-                "venue": str,
-                "pdf_url": Optional[str],
-            }
+            List of papers with metadata
         """
-        self.logger.info(f"Searching papers: {query}")
+        self.logger.info(f"Searching papers with {self.provider}: {query}")
 
+        if self.provider == "serpapi":
+            return await self._search_serpapi(query, year_from, year_to, min_citations)
+        else:
+            return await self._search_semantic_scholar(query, year_from, year_to, min_citations, **kwargs)
+
+    async def _search_semantic_scholar(
+        self,
+        query: str,
+        year_from: Optional[int] = None,
+        year_to: Optional[int] = None,
+        min_citations: int = 0,
+        **kwargs
+    ) -> List[Dict[str, Any]]:
+        """Search using Semantic Scholar API."""
         try:
             from semanticscholar import SemanticScholar
             
             # Initialize Semantic Scholar client
-            sch = SemanticScholar(api_key=self.api_key)
+            sch = SemanticScholar(api_key=self.semantic_scholar_key)
             
             # Define fields to retrieve
             fields = kwargs.get("fields", [
@@ -104,6 +113,95 @@ class PaperSearchTool:
         except Exception as e:
             self.logger.error(f"Error searching papers: {e}")
             return []
+
+    async def _search_serpapi(
+        self,
+        query: str,
+        year_from: Optional[int] = None,
+        year_to: Optional[int] = None,
+        min_citations: int = 0
+    ) -> List[Dict[str, Any]]:
+        """Search using Google Scholar via SerpAPI."""
+        if not self.serpapi_key:
+            self.logger.error("SerpAPI key not found")
+            return []
+            
+        try:
+            import aiohttp
+            
+            url = "https://serpapi.com/search.json"
+            params = {
+                "engine": "google_scholar",
+                "q": query,
+                "api_key": self.serpapi_key,
+                "num": self.max_results
+            }
+            
+            if year_from:
+                params["as_ylo"] = str(year_from)
+            if year_to:
+                params["as_yhi"] = str(year_to)
+                
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, params=params) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        return self._parse_serpapi_results(data, min_citations)
+                    else:
+                        self.logger.error(f"SerpAPI error: {response.status}")
+                        return []
+                        
+        except ImportError:
+            self.logger.error("aiohttp not installed")
+            return []
+        except Exception as e:
+            self.logger.error(f"Error searching SerpAPI: {e}")
+            return []
+
+    def _parse_serpapi_results(
+        self,
+        data: Dict[str, Any],
+        min_citations: int
+    ) -> List[Dict[str, Any]]:
+        """Parse SerpAPI Google Scholar results."""
+        papers = []
+        
+        for result in data.get("organic_results", []):
+            # Extract citation count
+            citation_info = result.get("inline_links", {}).get("cited_by", {})
+            citation_count = citation_info.get("total", 0)
+            
+            if citation_count < min_citations:
+                continue
+                
+            # Extract authors and year from publication_info
+            pub_info = result.get("publication_info", {})
+            summary = pub_info.get("summary", "")
+            
+            # Simple parsing of summary "Author1, Author2 - Venue, Year - publisher"
+            year = None
+            import re
+            year_match = re.search(r'\b(19|20)\d{2}\b', summary)
+            if year_match:
+                year = int(year_match.group(0))
+                
+            # Extract authors (rough approximation)
+            authors_str = summary.split("-")[0].strip()
+            authors = [{"name": a.strip()} for a in authors_str.split(",")]
+            
+            papers.append({
+                "paper_id": result.get("result_id"),
+                "title": result.get("title", "Unknown"),
+                "authors": authors,
+                "year": year,
+                "abstract": result.get("snippet", ""),
+                "citation_count": citation_count,
+                "url": result.get("link", ""),
+                "venue": "",  # Hard to extract reliably
+                "pdf_url": result.get("resources", [{}])[0].get("link") if result.get("resources") else None
+            })
+            
+        return papers
 
     async def get_paper_details(self, paper_id: str) -> Dict[str, Any]:
         """

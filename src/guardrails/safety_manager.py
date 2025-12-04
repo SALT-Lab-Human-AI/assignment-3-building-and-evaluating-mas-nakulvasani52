@@ -3,21 +3,25 @@ Safety Manager
 Coordinates safety guardrails and logs safety events.
 """
 
-from typing import Dict, Any, List, Optional
+from typing import List, Dict, Any, Tuple, Optional
 import logging
-from datetime import datetime
 import json
+from datetime import datetime
+from pathlib import Path
+import json
+import os
 
 
 class SafetyManager:
     """
     Manages safety guardrails for the multi-agent system.
-
-    TODO: YOUR CODE HERE
-    - Integrate with Guardrails AI or NeMo Guardrails
-    - Define safety policies
-    - Implement logging of safety events
-    - Handle different violation types with appropriate responses
+    
+    Features:
+    - Guardrails AI integration (optional)
+    - Input validation (harmful content, off-topic, academic dishonesty)
+    - Output validation (toxic language, bias, hallucinations)
+    - Safety event logging
+    - Configurable response strategies
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -31,8 +35,26 @@ class SafetyManager:
         self.enabled = config.get("enabled", True)
         self.log_events = config.get("log_events", True)
         self.logger = logging.getLogger("safety")
+        
+        # Safety policies (exposed for compliance checking)
+        self.policies = config.get("policies", {
+            "harmful_content": True,
+            "academic_dishonesty": True,
+            "toxic_language": True,
+            "inappropriate_content": True
+        })
+        
+        # Guardrails AI integration
+        self.use_guardrails_ai = config.get("framework") == "guardrails"
+        self.input_guard = None
+        self.output_guard = None
+        
+        # Initialize log file
+        if self.log_events:
+            self.log_file = Path("logs/safety_events.log")
+            self.log_file.parent.mkdir(parents=True, exist_ok=True)
 
-        # Safety event log
+        # Safety event log (deprecated, replaced by log_file)
         self.safety_events: List[Dict[str, Any]] = []
 
         # Prohibited categories
@@ -46,15 +68,54 @@ class SafetyManager:
         # Violation response strategy
         self.on_violation = config.get("on_violation", {})
 
-        # TODO: Initialize guardrail framework
-        # Examples:
-        # from guardrails import Guard
-        # self.guard = Guard(...)
-        # OR
-        # from nemoguardrails import RailsConfig
-        # self.rails = RailsConfig(...)
+        # Initialize guardrails
+        self.use_guardrails_ai = config.get("framework", "") == "guardrails"
+        
+        if self.enabled and self.use_guardrails_ai:
+            try:
+                from guardrails import Guard
+                from guardrails.validators import Validator, register_validator, ValidationResult, PassResult, FailResult
+                
+                # Define local validator to avoid Hub dependency
+                @register_validator(name="local_toxic_language", data_type="string")
+                class LocalToxicLanguage(Validator):
+                    def __init__(self, threshold: float = 0.5, on_fail: str = "fix"):
+                        super().__init__(on_fail=on_fail)
+                        self.threshold = threshold
+                        self.toxic_words = [
+                            "idiot", "stupid", "dumb", "hate", "kill", "attack", 
+                            "racist", "sexist", "scam", "fraud"
+                        ]
 
-    def check_input_safety(self, query: str) -> Dict[str, Any]:
+                    def validate(self, value: Any, metadata: Dict = {}) -> ValidationResult:
+                        lower_value = str(value).lower()
+                        found_words = [w for w in self.toxic_words if w in lower_value]
+                        
+                        if found_words:
+                            return FailResult(
+                                error_message=f"Found toxic words: {', '.join(found_words)}",
+                                fix_value=value  # Simple pass-through for fix, or could redact
+                            )
+                        return PassResult()
+                
+                # Create guard for input validation
+                self.input_guard = Guard().use(
+                    LocalToxicLanguage(threshold=0.5, on_fail="exception")
+                )
+                
+                # Create guard for output validation
+                self.output_guard = Guard().use(
+                    LocalToxicLanguage(threshold=0.5, on_fail="fix")
+                )
+                
+                self.logger.info("Guardrails AI initialized successfully with local validator")
+            except Exception as e:
+                self.logger.warning(f"Error initializing Guardrails AI: {e}, falling back to basic checks")
+                self.use_guardrails_ai = False
+        else:
+            self.use_guardrails_ai = False
+
+    def check_input(self, query: str) -> Tuple[bool, List[Dict[str, Any]]]:
         """
         Check if input query is safe to process.
 
@@ -62,41 +123,63 @@ class SafetyManager:
             query: User query to check
 
         Returns:
-            Dictionary with 'safe' boolean and optional 'violations' list
-
-        TODO: YOUR CODE HERE
-        - Implement guardrail checks
-        - Detect harmful/inappropriate content
-        - Detect off-topic queries
-        - Return detailed violation information
+            Tuple of (is_safe, violations_list)
         """
         if not self.enabled:
-            return {"safe": True}
+            return True, []
 
-        # TODO: Implement actual safety checks
-        # Example using Guardrails AI:
-        # result = self.guard.validate(query)
-        # if result.validation_passed:
-        #     return {"safe": True}
-        # else:
-        #     return {
-        #         "safe": False,
-        #         "violations": result.errors,
-        #         "sanitized_query": result.validated_output
-        #     }
-
-        # Placeholder implementation with simple keyword checks
         violations = []
 
-        # Check for prohibited keywords (very basic example)
-        prohibited_keywords = ["hack", "attack", "exploit", "bypass"]
-        for keyword in prohibited_keywords:
-            if keyword.lower() in query.lower():
+        # Check 1: Harmful research topics
+        harmful_keywords = [
+            "weapon", "bomb", "terrorist", "illegal", "drug synthesis",
+            "hack", "exploit", "malware", "virus creation"
+        ]
+        for keyword in harmful_keywords:
+            if keyword in query.lower():
                 violations.append({
-                    "category": "potentially_harmful",
-                    "reason": f"Query contains prohibited keyword: {keyword}",
+                    "category": "harmful_research",
+                    "reason": f"Query contains prohibited topic: {keyword}",
+                    "severity": "high"
+                })
+
+        # Check 2: Personal attacks or bias
+        attack_keywords = ["racist", "sexist", "discriminat", "hate"]
+        for keyword in attack_keywords:
+            if keyword in query.lower():
+                violations.append({
+                    "category": "inappropriate_content",
+                    "reason": f"Query contains potentially inappropriate language: {keyword}",
                     "severity": "medium"
                 })
+
+        # Check 3: Academic dishonesty
+        dishonesty_patterns = [
+            "write my paper", "write my research", "do my assignment",
+            "plagiarize", "cheat", "fake data", "write my essay"
+        ]
+        query_lower = query.lower()
+        for pattern in dishonesty_patterns:
+            if pattern in query_lower:
+                violations.append({
+                    "category": "academic_dishonesty",
+                    "reason": f"Query suggests academic dishonesty: '{pattern}'",
+                    "severity": "high"
+                })
+                break  # Only report once
+
+        # Check 4: Use Guardrails AI if available
+        if self.use_guardrails_ai:
+            try:
+                result = self.input_guard.validate(query)
+                if not result.validation_passed:
+                    violations.append({
+                        "category": "guardrails_ai_violation",
+                        "reason": "Toxic language detected by Guardrails AI",
+                        "severity": "medium"
+                    })
+            except Exception as e:
+                self.logger.warning(f"Guardrails AI check failed: {e}")
 
         is_safe = len(violations) == 0
 
@@ -104,12 +187,9 @@ class SafetyManager:
         if not is_safe and self.log_events:
             self._log_safety_event("input", query, violations, is_safe)
 
-        return {
-            "safe": is_safe,
-            "violations": violations
-        }
+        return is_safe, violations
 
-    def check_output_safety(self, response: str) -> Dict[str, Any]:
+    def check_output(self, response: str) -> Tuple[bool, str, List[Dict[str, Any]]]:
         """
         Check if output response is safe to return.
 
@@ -117,60 +197,118 @@ class SafetyManager:
             response: Generated response to check
 
         Returns:
-            Dictionary with 'safe' boolean and optional 'violations' list
-
-        TODO: YOUR CODE HERE
-        - Implement output guardrail checks
-        - Detect harmful content in responses
-        - Detect potential misinformation
-        - Sanitize or redact unsafe content
+            Tuple of (is_safe, sanitized_response, violations_list)
         """
         if not self.enabled:
-            return {"safe": True, "response": response}
-
-        # TODO: Implement actual output safety checks
-        # Example checks:
-        # - No PII (personal identifiable information)
-        # - No harmful instructions
-        # - Factual consistency
-        # - No bias or offensive language
+            return True, response, []
 
         violations = []
+        sanitized_response = response
 
-        # Placeholder implementation
+        # Check 1: No hallucinated references (basic check)
+        if "et al." in response:
+            # Check for suspicious patterns like (Author et al., n.d.) or missing years
+            import re
+            if re.search(r'\(.*et al\.,\s*n\.d\.\s*\)', response):
+                violations.append({
+                    "category": "potential_hallucination",
+                    "reason": "Found citation with 'n.d.' which may indicate hallucinated reference",
+                    "severity": "low"
+                })
+
+        # Check 2: No personal attacks or biased language
+        bias_keywords = ["obviously inferior", "clearly wrong", "stupid", "idiotic"]
+        for keyword in bias_keywords:
+            if keyword in response.lower():
+                violations.append({
+                    "category": "biased_language",
+                    "reason": f"Response contains potentially biased language: {keyword}",
+                    "severity": "medium"
+                })
+
+        # Check 3: Use Guardrails AI if available
+        if self.use_guardrails_ai:
+            try:
+                result = self.output_guard.validate(response)
+                if not result.validation_passed:
+                    sanitized_response = result.validated_output or response
+                    violations.append({
+                        "category": "guardrails_ai_output",
+                        "reason": "Output was sanitized by Guardrails AI",
+                        "severity": "medium"
+                    })
+            except Exception as e:
+                self.logger.warning(f"Guardrails AI output check failed: {e}")
+
         is_safe = len(violations) == 0
 
         # Log safety event
         if not is_safe and self.log_events:
             self._log_safety_event("output", response, violations, is_safe)
 
-        result = {
-            "safe": is_safe,
-            "violations": violations,
-            "response": response
-        }
-
-        # Apply sanitization if configured
+        # Apply configured action on violations
         if not is_safe:
             action = self.on_violation.get("action", "refuse")
-            if action == "sanitize":
-                result["response"] = self._sanitize_response(response, violations)
-            elif action == "refuse":
-                result["response"] = self.on_violation.get(
+            if action == "refuse":
+                sanitized_response = self.on_violation.get(
                     "message",
-                    "I cannot provide this response due to safety policies."
+                    "This response was blocked due to safety policy violations."
                 )
+            elif action == "sanitize":
+                sanitized_response = self._sanitize_response(response, violations)
 
-        return result
+        return is_safe, sanitized_response, violations
+    
+    # Legacy methods for backward compatibility
+    
+    def check_input_safety(self, query: str) -> Dict[str, Any]:
+        """
+        Check if input query is safe to process (legacy method).
+
+        Args:
+            query: User query to check
+
+        Returns:
+            Dictionary with 'safe' boolean and optional 'violations' list
+        """
+        is_safe, violations = self.check_input(query)
+        return {
+            "safe": is_safe,
+            "violations": violations
+        }
+
+    def check_output_safety(self, response: str) -> Dict[str, Any]:
+        """
+        Check if output response is safe to return (legacy method).
+
+        Args:
+            response: Generated response to check
+
+        Returns:
+            Dictionary with 'safe' boolean and optional 'violations' list
+        """
+        is_safe, sanitized, violations = self.check_output(response)
+        return {
+            "safe": is_safe,
+            "violations": violations,
+            "response": sanitized
+        }
 
     def _sanitize_response(self, response: str, violations: List[Dict[str, Any]]) -> str:
         """
         Sanitize response by removing or redacting unsafe content.
-
-        TODO: YOUR CODE HERE Implement sanitization logic
         """
-        # Placeholder
-        return "[REDACTED] " + response
+        # Basic sanitization - remove offensive keywords
+        sanitized = response
+        for violation in violations:
+            if violation["category"] == "biased_language":
+                # Replace biased keywords with [REDACTED]
+                sanitized = sanitized.replace(
+                    violation.get("reason", "").split(": ")[-1],
+                    "[REDACTED]"
+                )
+        
+        return sanitized
 
     def _log_safety_event(
         self,
@@ -200,9 +338,12 @@ class SafetyManager:
         self.logger.warning(f"Safety event: {event_type} - safe={is_safe}")
 
         # Write to safety log file if configured
-        log_file = self.config.get("safety_log_file")
-        if log_file and self.log_events:
+        log_file = self.config.get("safety_log_file") or "logs/safety_events.log"
+        if self.log_events:
             try:
+                # Create logs directory if it doesn't exist
+                os.makedirs(os.path.dirname(log_file), exist_ok=True)
+                
                 with open(log_file, "a") as f:
                     f.write(json.dumps(event) + "\n")
             except Exception as e:
